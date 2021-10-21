@@ -1,4 +1,5 @@
-﻿using MatData.Services.Municipe;
+﻿using MatData.Services.Indicator;
+using MatData.Services.Municipe;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 
@@ -9,12 +10,28 @@ namespace MatData.Controllers
     public class IndicatorController : ControllerBase
     {
         private readonly ILogger<IndicatorController> _logger;
-        private readonly IMunicipeService _municipeService;
+        private readonly IIndicatorService _indicatorService;
 
-        public IndicatorController(ILogger<IndicatorController> logger, IMunicipeService municipeService)
+        public IndicatorController(ILogger<IndicatorController> logger, IIndicatorService indicatorService)
         {
             _logger = logger;
-            _municipeService = municipeService;
+            _indicatorService = indicatorService;
+        }
+
+        [HttpGet("/indicator-response/{indicatorId}")]
+        public IActionResult GetIndicatorResponseByIndicatorId(int indicatorId)
+        {
+            _logger.LogInformation("Getting indicator response by indicator id");
+
+            return Ok(_indicatorService.GetIndicatorResponseById(indicatorId));
+        }
+
+        [HttpGet("/by-theme/{themeId}")]
+        public IActionResult GetIndicatorsByThemeId(int themeId)
+        {
+            _logger.LogInformation("Getting indicators by theme id");
+
+            return Ok(_indicatorService.GetIndicatorsByTheme(themeId));
         }
     }
 }
