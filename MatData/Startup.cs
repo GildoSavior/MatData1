@@ -1,4 +1,6 @@
 using MatData.Data;
+using MatData.Services.Category;
+using MatData.Services.Indicator;
 using MatData.Services.Municipe;
 using MatData.Services.NeighborhoodVillage;
 using MatData.Services.Province;
@@ -33,7 +35,9 @@ namespace MatData
         public void ConfigureServices(IServiceCollection services)
         {
 
-            services.AddControllers();
+            services.AddControllers().AddNewtonsoftJson(options =>
+                options.SerializerSettings.ReferenceLoopHandling = Newtonsoft.Json.ReferenceLoopHandling.Ignore
+            );
             services.AddSwaggerGen(c =>
             {
                 c.SwaggerDoc("v1", new OpenApiInfo { Title = "MatData", Version = "v1" });
@@ -43,10 +47,13 @@ namespace MatData
                 options.EnableDetailedErrors();
                 options.UseNpgsql(Configuration.GetConnectionString("sigibm.dev"));
             });
+            
             services.AddTransient<IProvinceService, ProvinceService>();
             services.AddTransient<IMunicipeService, MunicipeService>();
             services.AddTransient<IUrbanDistrictCommuneService, UrbanDistrictCommuneService>();
             services.AddTransient<INeighborhoodVillageService, NeighborhoodVillageService>();
+            services.AddTransient<ICategoryService, CategoryService>();
+            services.AddTransient<IIndicatorService, IndicatorService>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
