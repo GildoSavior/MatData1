@@ -1,10 +1,11 @@
 using MatData.Data;
-using MatData.Services.Category;
-using MatData.Services.Indicator;
 using MatData.Services.Municipe;
 using MatData.Services.NeighborhoodVillage;
 using MatData.Services.Province;
+using MatData.Services.Token;
 using MatData.Services.UrbanDistrictCommune;
+using MatData.Services.User;
+using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
@@ -14,10 +15,12 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
+using Microsoft.IdentityModel.Tokens;
 using Microsoft.OpenApi.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Text;
 using System.Threading.Tasks;
 
 namespace MatData
@@ -35,9 +38,7 @@ namespace MatData
         public void ConfigureServices(IServiceCollection services)
         {
 
-            services.AddControllers().AddNewtonsoftJson(options =>
-                options.SerializerSettings.ReferenceLoopHandling = Newtonsoft.Json.ReferenceLoopHandling.Ignore
-            );
+            services.AddControllers();
             services.AddSwaggerGen(c =>
             {
                 c.SwaggerDoc("v1", new OpenApiInfo { Title = "MatData", Version = "v1" });
@@ -47,13 +48,10 @@ namespace MatData
                 options.EnableDetailedErrors();
                 options.UseNpgsql(Configuration.GetConnectionString("sigibm.dev"));
             });
-            
             services.AddTransient<IProvinceService, ProvinceService>();
             services.AddTransient<IMunicipeService, MunicipeService>();
             services.AddTransient<IUrbanDistrictCommuneService, UrbanDistrictCommuneService>();
             services.AddTransient<INeighborhoodVillageService, NeighborhoodVillageService>();
-            services.AddTransient<ICategoryService, CategoryService>();
-            services.AddTransient<IIndicatorService, IndicatorService>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -69,6 +67,8 @@ namespace MatData
             app.UseHttpsRedirection();
 
             app.UseRouting();
+
+            app.UseAuthentication();
 
             app.UseAuthorization();
 
