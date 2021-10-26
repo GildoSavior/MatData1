@@ -243,6 +243,27 @@ namespace MatData.Migrations
                     b.ToTable("UrbanDistrictCommunes");
                 });
 
+            modelBuilder.Entity("MatData.Models.User", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("integer")
+                        .HasAnnotation("Npgsql:ValueGenerationStrategy", NpgsqlValueGenerationStrategy.IdentityByDefaultColumn);
+
+                    b.Property<string>("Password")
+                        .HasColumnType("text");
+
+                    b.Property<string>("Role")
+                        .HasColumnType("text");
+
+                    b.Property<string>("Username")
+                        .HasColumnType("text");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("Users");
+                });
+
             modelBuilder.Entity("MatData.Models.Indicator", b =>
                 {
                     b.HasOne("MatData.Models.Theme", "Theme")

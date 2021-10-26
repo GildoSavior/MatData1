@@ -8,6 +8,7 @@ namespace MatData.Data
         public AppDbContext() {}
         public AppDbContext(DbContextOptions options) : base(options) { }
 
+        public virtual DbSet<User> Users {  get; set; }
         public virtual DbSet<Province> Provinces { get; set; }
         public virtual DbSet<Municipe> Municipes { get; set; }
         public virtual DbSet<UrbanDistrictCommune> UrbanDistrictCommunes { get; set; }
