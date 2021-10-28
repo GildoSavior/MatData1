@@ -52,6 +52,10 @@ namespace MatData
             services.AddTransient<IMunicipeService, MunicipeService>();
             services.AddTransient<IUrbanDistrictCommuneService, UrbanDistrictCommuneService>();
             services.AddTransient<INeighborhoodVillageService, NeighborhoodVillageService>();
+            services.AddTransient<ICategoryService, CategoryService>();
+            services.AddTransient<IIndicatorService, IndicatorService>();
+            services.AddTransient<ITokenService, TokenService>();
+            services.AddTransient<IUserService, UserService>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
