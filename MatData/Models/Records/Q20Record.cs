@@ -1,0 +1,38 @@
+﻿namespace MatData.Models.Records
+{
+    public record Q20Record(
+        string q2001,
+        string q2002,
+        string q2003,
+        string q2004,
+        string q2005,
+        string q2006,
+        string q2007,
+        string q2008,
+        string q2009,
+        string q2010,
+        string q2011,
+        string q2012,
+        string q2013,
+        string q2014,
+        string q2015,
+        string q2016,
+        string q2017,
+        string q2018,
+        string q2019,
+        string q2020,
+        string q2021,
+        string q2022,
+        string q2023,
+        string q2024,
+        string q2025,
+        string q2026,
+        string q2027,
+        string q2028,
+        string q2029,
+        string q2030,
+        string q2031,
+        string q2032,
+        string q2033
+        );
+}

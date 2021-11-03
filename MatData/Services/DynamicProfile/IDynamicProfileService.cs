@@ -8,6 +8,5 @@ namespace MatData.Services.DynamicProfile
     public interface IDynamicProfileService
     {
         Task<ServiceResponse<bool>> importData(IFormFile file);
-        void saveData(List<Quiz> list);
     }
 }

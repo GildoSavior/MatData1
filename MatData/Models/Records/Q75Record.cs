@@ -1,0 +1,36 @@
+﻿namespace MatData.Models.Records
+{
+    public record Q75Record(
+        string q7501,
+        string q7502,
+        string q7503,
+        string q7504,
+        string q7505,
+        string q7506,
+        string q7507,
+        string q7508,
+        string q7509,
+        string q7510,
+        string q7511,
+        string q7512,
+        string q7513,
+        string q7514,
+        string q7515,
+        string q7516,
+        string q7517,
+        string q7518,
+        string q7519,
+        string q7520,
+        string q7521,
+        string q7522,
+        string q7523,
+        string q7524,
+        string q7525,
+        string q7526,
+        string q7527,
+        string q7528,
+        string q7529,
+        string q7530,
+        string q7531        
+        );
+}

@@ -1,0 +1,10 @@
+﻿INSERT INTO "Indicators" ("Id", "CreatedOn", "UpdatedOn", "Name", "ThemeId") VALUES (1, NOW(), NOW(), 'Municipios', 1);
+INSERT INTO "Indicators" ("Id", "CreatedOn", "UpdatedOn", "Name", "ThemeId") VALUES (2, NOW(), NOW(), 'Comunas/Distritos', 2);
+INSERT INTO "Indicators" ("Id", "CreatedOn", "UpdatedOn", "Name", "ThemeId") VALUES (3, NOW(), NOW(), 'Aldeias/Bairros', 3);
+INSERT INTO "Indicators" ("Id", "CreatedOn", "UpdatedOn", "Name", "ThemeId") VALUES (4, NOW(), NOW(), 'Estruturas Administrativas', 4);
+INSERT INTO "Indicators" ("Id", "CreatedOn", "UpdatedOn", "Name", "ThemeId") VALUES (5, NOW(), NOW(), 'Cargos de Direcção e Chefia da Administração Municipal', 5);
+INSERT INTO "Indicators" ("Id", "CreatedOn", "UpdatedOn", "Name", "ThemeId") VALUES (6, NOW(), NOW(), 'Funcionários da Administração Municipal', 6);
+INSERT INTO "Indicators" ("Id", "CreatedOn", "UpdatedOn", "Name", "ThemeId") VALUES (7, NOW(), NOW(), 'Conselho Municipal de Auscultação da Comunidade (CMAC)', 7);
+INSERT INTO "Indicators" ("Id", "CreatedOn", "UpdatedOn", "Name", "ThemeId") VALUES (8, NOW(), NOW(), 'Conselho Municipal de Concertação Social (CMCS)', 8);
+INSERT INTO "Indicators" ("Id", "CreatedOn", "UpdatedOn", "Name", "ThemeId") VALUES (9, NOW(), NOW(), 'Conselho Municipal de Vigilância Comunitária (CMVC)', 9);
+INSERT INTO "Indicators" ("Id", "CreatedOn", "UpdatedOn", "Name", "ThemeId") VALUES (10, NOW(), NOW(), 'Autoridades Tradicionais', 10);

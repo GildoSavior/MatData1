@@ -1,0 +1,36 @@
+﻿namespace MatData.Models.Records
+{
+    public record Q38Record(
+        string q3801,
+        string q3802,
+        string q3803,
+        string q3804,
+        string q3805,
+        string q3806,
+        string q3807,
+        string q3808,
+        string q3809,
+        string q3810,
+        string q3811,
+        string q3812,
+        string q3813,
+        string q3814,
+        string q3815,
+        string q3816,
+        string q3817,
+        string q3818,
+        string q3819,
+        string q3820,
+        string q3821,
+        string q3822,
+        string q3823,
+        string q3824,
+        string q3825,
+        string q3826,
+        string q3827,
+        string q3828,
+        string q3829,
+        string q3830,
+        string q3831        
+        );
+}

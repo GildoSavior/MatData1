@@ -24,30 +24,5 @@ namespace MatData.Serialization
                 Data = JsonConvert.DeserializeObject<T>(record.Data)
             };
         }
-
-        public static List<Quiz> Serializes(string fileName)
-        {
-            var list = new List<Quiz>();
-            var config = new CsvConfiguration(CultureInfo.InvariantCulture)
-            {
-                HasHeaderRecord = false,
-            };
-            using (var reader = new StreamReader(fileName))
-            using (var csv = new CsvReader(reader, config))
-            {
-                var records = csv.GetRecords<Quiz>().ToList();
-
-                for (var i = 0; i < records.Count; i++)
-                {
-                    var record = records[i];
-                    if (i == 0)
-                        continue;
-
-                    list.Add(record);
-                }
-            }
-
-            return list;
-        }
     }
 }
