@@ -1,7 +1,4 @@
 using MatData.Data;
-using MatData.Services.Category;
-using MatData.Services.DynamicProfile;
-using MatData.Services.Indicator;
 using MatData.Services.Municipe;
 using MatData.Services.NeighborhoodVillage;
 using MatData.Services.Province;
@@ -41,10 +38,7 @@ namespace MatData
         public void ConfigureServices(IServiceCollection services)
         {
 
-            services.AddControllers().AddNewtonsoftJson(options =>
-                options.SerializerSettings.ReferenceLoopHandling = Newtonsoft.Json.ReferenceLoopHandling.Ignore
-            );
-
+            services.AddControllers();
             services.AddSwaggerGen(c =>
             {
                 c.SwaggerDoc("v1", new OpenApiInfo { Title = "MatData", Version = "v1" });
@@ -54,26 +48,6 @@ namespace MatData
                 options.EnableDetailedErrors();
                 options.UseNpgsql(Configuration.GetConnectionString("sigibm.dev"));
             });
-
-            var key = Encoding.ASCII.GetBytes(Configuration.GetValue<string>("JsonWebToken:Secret"));
-
-            services.AddAuthentication(x =>
-            {
-                x.DefaultAuthenticateScheme = JwtBearerDefaults.AuthenticationScheme;
-                x.DefaultChallengeScheme = JwtBearerDefaults.AuthenticationScheme;
-            }).AddJwtBearer(x =>
-            {
-                x.RequireHttpsMetadata = false;
-                x.SaveToken = true;
-                x.TokenValidationParameters = new TokenValidationParameters
-                {
-                    ValidateIssuerSigningKey = true,
-                    IssuerSigningKey = new SymmetricSecurityKey(key),
-                    ValidateIssuer = false,
-                    ValidateAudience = false
-                };
-            });
-
             services.AddTransient<IProvinceService, ProvinceService>();
             services.AddTransient<IMunicipeService, MunicipeService>();
             services.AddTransient<IUrbanDistrictCommuneService, UrbanDistrictCommuneService>();
@@ -82,7 +56,6 @@ namespace MatData
             services.AddTransient<IIndicatorService, IndicatorService>();
             services.AddTransient<ITokenService, TokenService>();
             services.AddTransient<IUserService, UserService>();
-            services.AddTransient<IDynamicProfileService, DynamicProfileService>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
