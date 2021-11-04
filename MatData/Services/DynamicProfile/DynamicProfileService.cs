@@ -180,6 +180,84 @@ namespace MatData.Services.DynamicProfile
                                 _db.SaveChanges();
                             }
 
+                            if (record.FormId == "Q05")
+                            {
+                                var quiz = QuizMapper.Serialize<Q5Record>(record);
+
+                                var props = new Dictionary<string, string>();
+
+                                foreach (var prop in quiz.Data.GetType().GetProperties())
+                                {
+                                    props.Add(prop.Name, prop.GetValue(quiz.Data, null)?.ToString());
+                                }
+
+                                var now = DateTime.Now;
+
+                                _db.IndicatorResponses.Add(new IndicatorResponse
+                                {
+                                    CreatedOn = now,
+                                    UpdatedOn = now,
+                                    Data = JsonConvert.SerializeObject(Q5Mapper.Serialize(quiz.Data)),
+                                    Indicator = _db.Indicators.Find(5),
+                                    Province = _db.Provinces.FirstOrDefault(p => p.Name == props["q501"]),
+                                    Municipe = _db.Municipes.FirstOrDefault(p => p.Name == props["q502"]),
+                                });
+
+                                _db.SaveChanges();
+                            }
+
+                            if (record.FormId == "Q06")
+                            {
+                                var quiz = QuizMapper.Serialize<Q6Record>(record);
+
+                                var props = new Dictionary<string, string>();
+
+                                foreach (var prop in quiz.Data.GetType().GetProperties())
+                                {
+                                    props.Add(prop.Name, prop.GetValue(quiz.Data, null)?.ToString());
+                                }
+
+                                var now = DateTime.Now;
+
+                                _db.IndicatorResponses.Add(new IndicatorResponse
+                                {
+                                    CreatedOn = now,
+                                    UpdatedOn = now,
+                                    Data = JsonConvert.SerializeObject(Q6Mapper.Serialize(quiz.Data)),
+                                    Indicator = _db.Indicators.Find(6),
+                                    Province = _db.Provinces.FirstOrDefault(p => p.Name == props["q601"]),
+                                    Municipe = _db.Municipes.FirstOrDefault(p => p.Name == props["q602"]),
+                                });
+
+                                _db.SaveChanges();
+                            }
+
+                            if (record.FormId == "Q07")
+                            {
+                                var quiz = QuizMapper.Serialize<Q7Record>(record);
+
+                                var props = new Dictionary<string, string>();
+
+                                foreach (var prop in quiz.Data.GetType().GetProperties())
+                                {
+                                    props.Add(prop.Name, prop.GetValue(quiz.Data, null)?.ToString());
+                                }
+
+                                var now = DateTime.Now;
+
+                                _db.IndicatorResponses.Add(new IndicatorResponse
+                                {
+                                    CreatedOn = now,
+                                    UpdatedOn = now,
+                                    Data = JsonConvert.SerializeObject(Q7Mapper.Serialize(quiz.Data)),
+                                    Indicator = _db.Indicators.Find(7),
+                                    Province = _db.Provinces.FirstOrDefault(p => p.Name == props["q701"]),
+                                    Municipe = _db.Municipes.FirstOrDefault(p => p.Name == props["q702"]),
+                                });
+
+                                _db.SaveChanges();
+                            }
+
                             if (record.FormId == "Q10")
                             {
                                 var quiz = QuizMapper.Serialize<Q10Record>(record);
