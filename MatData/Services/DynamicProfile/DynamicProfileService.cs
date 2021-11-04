@@ -258,6 +258,32 @@ namespace MatData.Services.DynamicProfile
                                 _db.SaveChanges();
                             }
 
+                            if (record.FormId == "Q08")
+                            {
+                                var quiz = QuizMapper.Serialize<Q8Record>(record);
+
+                                var props = new Dictionary<string, string>();
+
+                                foreach (var prop in quiz.Data.GetType().GetProperties())
+                                {
+                                    props.Add(prop.Name, prop.GetValue(quiz.Data, null)?.ToString());
+                                }
+
+                                var now = DateTime.Now;
+
+                                _db.IndicatorResponses.Add(new IndicatorResponse
+                                {
+                                    CreatedOn = now,
+                                    UpdatedOn = now,
+                                    Data = JsonConvert.SerializeObject(Q8Mapper.Serialize(quiz.Data)),
+                                    Indicator = _db.Indicators.Find(8),
+                                    Province = _db.Provinces.FirstOrDefault(p => p.Name == props["q801"]),
+                                    Municipe = _db.Municipes.FirstOrDefault(p => p.Name == props["q802"]),
+                                });
+
+                                _db.SaveChanges();
+                            }
+
                             if (record.FormId == "Q10")
                             {
                                 var quiz = QuizMapper.Serialize<Q10Record>(record);
