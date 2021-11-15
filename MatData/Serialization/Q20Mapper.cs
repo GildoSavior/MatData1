@@ -21,11 +21,11 @@ namespace MatData.Serialization
                     VolumeAguaNoTempoCalor = double.Parse(model.q2015),
                     AcidentesNoCursoDoRio = double.Parse(model.q2016),
                     FotografiaDosAcidentesDoRio = model.q2017,
-                    Observacoes = model.q2034
+                    Observacoes = model.q2034,
                 };
             }
 
-            if (model.q2006 == "Rio")
+            if (model.q2006 == "Lago")
             {
                 return new
                 {

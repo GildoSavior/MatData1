@@ -1,6 +1,6 @@
 ﻿namespace MatData.Models.Records
 {
-    public record q48Record(
+    public record Q48Record(
         string q4801,
         string q4802,
         string q4803,
@@ -35,6 +35,10 @@
         string q4832,
         string q4833,
         string q4834,
+        string q4835,
+        string q4836,
+        string q4837,
+        string q4838,
         string q4839,
         string q4840,
         string q4841,

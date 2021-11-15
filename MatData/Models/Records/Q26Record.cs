@@ -18,6 +18,8 @@
         string q2615,
         string q2616,
         string q2617,
-        string q2618
+        string q2618,
+        string q2619,
+        string q2620
         );
 }
