@@ -853,6 +853,92 @@ namespace MatData.Services.DynamicProfile
                                 _db.SaveChanges();
                             }
 
+                            if (record.FormId == "Q29")
+                            {
+                                var quiz = QuizMapper.Serialize<Q29Record>(record);
+
+                                var props = new Dictionary<string, string>();
+
+                                foreach (var prop in quiz.Data.GetType().GetProperties())
+                                {
+                                    props.Add(prop.Name, prop.GetValue(quiz.Data, null)?.ToString());
+                                }
+
+                                var now = DateTime.Now;
+
+                                _db.IndicatorResponses.Add(new IndicatorResponse
+                                {
+                                    CreatedOn = now,
+                                    UpdatedOn = now,
+                                    Data = JsonConvert.SerializeObject(Q29Mapper.Serialize(quiz.Data)),
+                                    Indicator = _db.Indicators.Find(29),
+                                    Province = _db.Provinces.FirstOrDefault(p => p.Name == props["q2901"]),
+                                    Municipe = _db.Municipes.FirstOrDefault(p => p.Name == props["q2902"]),
+                                    UrbanDistrictCommune = _db.UrbanDistrictCommunes.FirstOrDefault(p => p.Name == props["q2903"]),
+                                    NeighborhoodVillage = _db.NeighborhoodVillages.FirstOrDefault(p => p.Name == props["q2904"])
+                                });
+
+                                _db.SaveChanges();
+                            }
+
+                            if (record.FormId == "Q30")
+                            {
+                                var quiz = QuizMapper.Serialize<Q30Record>(record);
+
+                                var props = new Dictionary<string, string>();
+
+                                foreach (var prop in quiz.Data.GetType().GetProperties())
+                                {
+                                    props.Add(prop.Name, prop.GetValue(quiz.Data, null)?.ToString());
+                                }
+
+                                var now = DateTime.Now;
+
+                                _db.IndicatorResponses.Add(new IndicatorResponse
+                                {
+                                    CreatedOn = now,
+                                    UpdatedOn = now,
+                                    Data = JsonConvert.SerializeObject(Q30Mapper.Serialize(quiz.Data)),
+                                    Indicator = _db.Indicators.Find(30),
+                                    Province = _db.Provinces.FirstOrDefault(p => p.Name == props["q3001"]),
+                                    Municipe = _db.Municipes.FirstOrDefault(p => p.Name == props["q3002"]),
+                                    UrbanDistrictCommune = _db.UrbanDistrictCommunes.FirstOrDefault(p => p.Name == props["q3003"]),
+                                    NeighborhoodVillage = _db.NeighborhoodVillages.FirstOrDefault(p => p.Name == props["q3004"]),
+
+                                });
+
+                                _db.SaveChanges();
+                            }
+
+                            if (record.FormId == "Q31")
+                            {
+                                var quiz = QuizMapper.Serialize<Q31Record>(record);
+
+                                var props = new Dictionary<string, string>();
+
+                                foreach (var prop in quiz.Data.GetType().GetProperties())
+                                {
+                                    props.Add(prop.Name, prop.GetValue(quiz.Data, null)?.ToString());
+                                }
+
+                                var now = DateTime.Now;
+
+                                _db.IndicatorResponses.Add(new IndicatorResponse
+                                {
+                                    CreatedOn = now,
+                                    UpdatedOn = now,
+                                    Data = JsonConvert.SerializeObject(Q31Mapper.Serialize(quiz.Data)),
+                                    Indicator = _db.Indicators.Find(31),
+                                    Province = _db.Provinces.FirstOrDefault(p => p.Name == props["q3101"]),
+                                    Municipe = _db.Municipes.FirstOrDefault(p => p.Name == props["q3102"]),
+                                    UrbanDistrictCommune = _db.UrbanDistrictCommunes.FirstOrDefault(p => p.Name == props["q3103"]),
+                                    NeighborhoodVillage = _db.NeighborhoodVillages.FirstOrDefault(p => p.Name == props["q3104"]),
+
+                                });
+
+                                _db.SaveChanges();
+                            }
+
                             if (record.FormId == "Q32")
                             {
                                 var quiz = QuizMapper.Serialize<Q32Record>(record);
@@ -966,6 +1052,62 @@ namespace MatData.Services.DynamicProfile
                                 _db.SaveChanges();
                             }
 
+                            if (record.FormId == "Q39")
+                            {
+                                var quiz = QuizMapper.Serialize<Q39Record>(record);
+
+                                var props = new Dictionary<string, string>();
+
+                                foreach (var prop in quiz.Data.GetType().GetProperties())
+                                {
+                                    props.Add(prop.Name, prop.GetValue(quiz.Data, null)?.ToString());
+                                }
+
+                                var now = DateTime.Now;
+
+                                _db.IndicatorResponses.Add(new IndicatorResponse
+                                {
+                                    CreatedOn = now,
+                                    UpdatedOn = now,
+                                    Data = JsonConvert.SerializeObject(Q39Mapper.Serialize(quiz.Data)),
+                                    Indicator = _db.Indicators.Find(40),
+                                    Province = _db.Provinces.FirstOrDefault(p => p.Name == props["q3901"]),
+                                    Municipe = _db.Municipes.FirstOrDefault(p => p.Name == props["q3902"]),
+                                    UrbanDistrictCommune = _db.UrbanDistrictCommunes.FirstOrDefault(p => p.Name == props["q3903"]),
+                                    NeighborhoodVillage = _db.NeighborhoodVillages.FirstOrDefault(p => p.Name == props["q3904"])
+                                });
+
+                                _db.SaveChanges();
+                            }
+
+                            if (record.FormId == "Q40")
+                            {
+                                var quiz = QuizMapper.Serialize<Q40Record>(record);
+
+                                var props = new Dictionary<string, string>();
+
+                                foreach (var prop in quiz.Data.GetType().GetProperties())
+                                {
+                                    props.Add(prop.Name, prop.GetValue(quiz.Data, null)?.ToString());
+                                }
+
+                                var now = DateTime.Now;
+
+                                _db.IndicatorResponses.Add(new IndicatorResponse
+                                {
+                                    CreatedOn = now,
+                                    UpdatedOn = now,
+                                    Data = JsonConvert.SerializeObject(Q40Mapper.Serialize(quiz.Data)),
+                                    Indicator = _db.Indicators.Find(40),
+                                    Province = _db.Provinces.FirstOrDefault(p => p.Name == props["q4001"]),
+                                    Municipe = _db.Municipes.FirstOrDefault(p => p.Name == props["q4002"]),
+                                    UrbanDistrictCommune = _db.UrbanDistrictCommunes.FirstOrDefault(p => p.Name == props["q4003"]),
+                                    NeighborhoodVillage = _db.NeighborhoodVillages.FirstOrDefault(p => p.Name == props["q4004"])
+                                });
+
+                                _db.SaveChanges();
+                            }
+
                             if (record.FormId == "Q41")
                             {
                                 var quiz = QuizMapper.Serialize<Q41Record>(record);
@@ -1013,6 +1155,88 @@ namespace MatData.Services.DynamicProfile
                                     Indicator = _db.Indicators.Find(42),
                                     Province = _db.Provinces.FirstOrDefault(p => p.Name == props["q4201"]),
                                     Municipe = _db.Municipes.FirstOrDefault(p => p.Name == props["q4202"])
+                                });
+
+                                _db.SaveChanges();
+                            }
+
+                            if (record.FormId == "Q43")
+                            {
+                                var quiz = QuizMapper.Serialize<Q43Record>(record);
+
+                                var props = new Dictionary<string, string>();
+
+                                foreach (var prop in quiz.Data.GetType().GetProperties())
+                                {
+                                    props.Add(prop.Name, prop.GetValue(quiz.Data, null)?.ToString());
+                                }
+
+                                var now = DateTime.Now;
+
+                                _db.IndicatorResponses.Add(new IndicatorResponse
+                                {
+                                    CreatedOn = now,
+                                    UpdatedOn = now,
+                                    Data = JsonConvert.SerializeObject(Q43Mapper.Serialize(quiz.Data)),
+                                    Indicator = _db.Indicators.Find(43),
+                                    Province = _db.Provinces.FirstOrDefault(p => p.Name == props["q4301"]),
+                                    Municipe = _db.Municipes.FirstOrDefault(p => p.Name == props["q4302"]),
+                                    UrbanDistrictCommune = _db.UrbanDistrictCommunes.FirstOrDefault(p => p.Name == props["q4303"]),
+                                    NeighborhoodVillage = _db.NeighborhoodVillages.FirstOrDefault(p => p.Name == props["q4304"])
+                                });
+
+                                _db.SaveChanges();
+                            }
+
+                            if (record.FormId == "Q44")
+                            {
+                                var quiz = QuizMapper.Serialize<Q44Record>(record);
+
+                                var props = new Dictionary<string, string>();
+
+                                foreach (var prop in quiz.Data.GetType().GetProperties())
+                                {
+                                    props.Add(prop.Name, prop.GetValue(quiz.Data, null)?.ToString());
+                                }
+
+                                var now = DateTime.Now;
+
+                                _db.IndicatorResponses.Add(new IndicatorResponse
+                                {
+                                    CreatedOn = now,
+                                    UpdatedOn = now,
+                                    Data = JsonConvert.SerializeObject(Q44Mapper.Serialize(quiz.Data)),
+                                    Indicator = _db.Indicators.Find(44),
+                                    Province = _db.Provinces.FirstOrDefault(p => p.Name == props["q4401"]),
+                                    Municipe = _db.Municipes.FirstOrDefault(p => p.Name == props["q4402"])
+                                });
+
+                                _db.SaveChanges();
+                            }
+
+                            if (record.FormId == "Q45")
+                            {
+                                var quiz = QuizMapper.Serialize<Q45Record>(record);
+
+                                var props = new Dictionary<string, string>();
+
+                                foreach (var prop in quiz.Data.GetType().GetProperties())
+                                {
+                                    props.Add(prop.Name, prop.GetValue(quiz.Data, null)?.ToString());
+                                }
+
+                                var now = DateTime.Now;
+
+                                _db.IndicatorResponses.Add(new IndicatorResponse
+                                {
+                                    CreatedOn = now,
+                                    UpdatedOn = now,
+                                    Data = JsonConvert.SerializeObject(Q45Mapper.Serialize(quiz.Data)),
+                                    Indicator = _db.Indicators.Find(45),
+                                    Province = _db.Provinces.FirstOrDefault(p => p.Name == props["q4501"]),
+                                    Municipe = _db.Municipes.FirstOrDefault(p => p.Name == props["q4502"]),
+                                    UrbanDistrictCommune = _db.UrbanDistrictCommunes.FirstOrDefault(p => p.Name == props["q4503"]),
+                                    NeighborhoodVillage = _db.NeighborhoodVillages.FirstOrDefault(p => p.Name == props["q4504"])
                                 });
 
                                 _db.SaveChanges();
@@ -1093,6 +1317,62 @@ namespace MatData.Services.DynamicProfile
                                     Indicator = _db.Indicators.Find(48),
                                     Province = _db.Provinces.FirstOrDefault(p => p.Name == props["q4801"]),
                                     Municipe = _db.Municipes.FirstOrDefault(p => p.Name == props["q4802"])
+                                });
+
+                                _db.SaveChanges();
+                            }
+
+                            if (record.FormId == "Q49")
+                            {
+                                var quiz = QuizMapper.Serialize<Q49Record>(record);
+
+                                var props = new Dictionary<string, string>();
+
+                                foreach (var prop in quiz.Data.GetType().GetProperties())
+                                {
+                                    props.Add(prop.Name, prop.GetValue(quiz.Data, null)?.ToString());
+                                }
+
+                                var now = DateTime.Now;
+
+                                _db.IndicatorResponses.Add(new IndicatorResponse
+                                {
+                                    CreatedOn = now,
+                                    UpdatedOn = now,
+                                    Data = JsonConvert.SerializeObject(Q49Mapper.Serialize(quiz.Data)),
+                                    Indicator = _db.Indicators.Find(49),
+                                    Province = _db.Provinces.FirstOrDefault(p => p.Name == props["q4901"]),
+                                    Municipe = _db.Municipes.FirstOrDefault(p => p.Name == props["q4902"]),
+                                    UrbanDistrictCommune = _db.UrbanDistrictCommunes.FirstOrDefault(p => p.Name == props["q4903"]),
+                                    NeighborhoodVillage = _db.NeighborhoodVillages.FirstOrDefault(p => p.Name == props["q4904"])
+                                });
+
+                                _db.SaveChanges();
+                            }
+
+                            if (record.FormId == "Q50")
+                            {
+                                var quiz = QuizMapper.Serialize<Q50Record>(record);
+
+                                var props = new Dictionary<string, string>();
+
+                                foreach (var prop in quiz.Data.GetType().GetProperties())
+                                {
+                                    props.Add(prop.Name, prop.GetValue(quiz.Data, null)?.ToString());
+                                }
+
+                                var now = DateTime.Now;
+
+                                _db.IndicatorResponses.Add(new IndicatorResponse
+                                {
+                                    CreatedOn = now,
+                                    UpdatedOn = now,
+                                    Data = JsonConvert.SerializeObject(Q50Mapper.Serialize(quiz.Data)),
+                                    Indicator = _db.Indicators.Find(50),
+                                    Province = _db.Provinces.FirstOrDefault(p => p.Name == props["q5001"]),
+                                    Municipe = _db.Municipes.FirstOrDefault(p => p.Name == props["q5002"]),
+                                    UrbanDistrictCommune = _db.UrbanDistrictCommunes.FirstOrDefault(p => p.Name == props["q5003"]),
+                                    NeighborhoodVillage = _db.NeighborhoodVillages.FirstOrDefault(p => p.Name == props["q5004"])
                                 });
 
                                 _db.SaveChanges();
