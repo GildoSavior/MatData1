@@ -9,7 +9,6 @@ namespace MatData.Models
         public DateTime CreatedOn { get; set; }
         public DateTime UpdatedOn { get; set; }
         public string Name { get; set; }
-        public string CodName { get; set; }
         public Category Category { get; set; }
         public List<Indicator> Indicator { get; set; }
     }

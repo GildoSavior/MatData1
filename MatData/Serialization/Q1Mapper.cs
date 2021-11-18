@@ -11,6 +11,7 @@ namespace MatData.Serialization
             return new Q1Model
             {
                 IdentificationService = model.q105,
+                Location = model.q104,
                 PhoneNumber = model.q106,
                 Email = model.q107,
                 Website = model.q108,

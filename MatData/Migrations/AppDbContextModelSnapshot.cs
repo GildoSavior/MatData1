@@ -85,6 +85,9 @@ namespace MatData.Migrations
                     b.Property<int?>("IndicatorId")
                         .HasColumnType("integer");
 
+                    b.Property<string>("InstanceId")
+                        .HasColumnType("text");
+
                     b.Property<int?>("MunicipeId")
                         .HasColumnType("integer");
 
@@ -200,9 +203,6 @@ namespace MatData.Migrations
 
                     b.Property<int?>("CategoryId")
                         .HasColumnType("integer");
-
-                    b.Property<string>("CodName")
-                        .HasColumnType("text");
 
                     b.Property<DateTime>("CreatedOn")
                         .HasColumnType("timestamp without time zone");

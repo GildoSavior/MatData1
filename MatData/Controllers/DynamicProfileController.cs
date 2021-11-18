@@ -1,4 +1,5 @@
-﻿using MatData.Services.DynamicProfile;
+﻿using Matdata.API.ViewModels;
+using MatData.Services.DynamicProfile;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
@@ -20,9 +21,9 @@ namespace MatData.Controllers
         }
 
         [HttpPost]
-        public async Task<ActionResult<ServiceResponse<bool>>> ImportData(IFormFile file)
+        public async Task<ActionResult<ServiceResponse<bool>>> ImportData(IFormFile file, [FromQuery] ProfileVM model)
         {
-            return await _dynamicProfileService.importData(file);
+            return await _dynamicProfileService.importData(model, file);
         }
     }
 }

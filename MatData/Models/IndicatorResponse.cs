@@ -14,5 +14,6 @@ namespace MatData.Models
         public UrbanDistrictCommune? UrbanDistrictCommune { get; set; }
         public NeighborhoodVillage? NeighborhoodVillage { get; set; }
         public string? Data { get; set; }
+        public string InstanceId { get; set; }
     }
 }
