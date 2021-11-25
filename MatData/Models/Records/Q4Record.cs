@@ -19,7 +19,7 @@
        string q416,
        string q417,
        int q418,
-       string q419,
+       string[] q419,
        string q420,
        string q421,
        string q422,
