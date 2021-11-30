@@ -40,6 +40,7 @@ namespace MatData
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+            services.AddCors();
 
             services.AddControllers().AddNewtonsoftJson(options =>
                 options.SerializerSettings.ReferenceLoopHandling = Newtonsoft.Json.ReferenceLoopHandling.Ignore
@@ -95,9 +96,19 @@ namespace MatData
                 app.UseSwaggerUI(c => c.SwaggerEndpoint("/swagger/v1/swagger.json", "MatData v1"));
             }
 
+            app.UseCors(builder =>
+                builder
+                    .WithOrigins("http://localhost:3000", "http://localhost:3001", "http://localhost:3002")
+                    .AllowAnyMethod()
+                    .AllowAnyHeader()
+                    .AllowCredentials()
+                );
+
             app.UseHttpsRedirection();
 
             app.UseRouting();
+
+            
 
             app.UseAuthentication();
 

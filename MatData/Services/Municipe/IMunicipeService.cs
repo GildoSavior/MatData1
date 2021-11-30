@@ -8,5 +8,6 @@ namespace MatData.Services.Municipe
         ServiceResponse<Models.Municipe> CreateMunicipe(Models.Municipe municipe);
         ServiceResponse<bool> DeleteMunicipe(int id);
         Models.Municipe GetById(int id);
+        List<Models.Municipe> GetAllByProvinceId(int id);
     }
 }

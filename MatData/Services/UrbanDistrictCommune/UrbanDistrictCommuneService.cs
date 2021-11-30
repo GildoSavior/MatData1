@@ -96,5 +96,13 @@ namespace MatData.Services.UrbanDistrictCommune
                 .Include(urban => urban.Municipe)
                 .First(urban => urban.Id == id);
         }
+
+        public List<Models.UrbanDistrictCommune> GetAllByMunicipeId(int id)
+        {
+            return _db.UrbanDistrictCommunes
+                .Include(u => u.Municipe)
+                .Where(u => u.Municipe.Id == id)
+                .ToList();
+        }
     }
 }

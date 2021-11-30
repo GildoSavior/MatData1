@@ -37,6 +37,15 @@ namespace MatData.Controllers
             return Ok(provinceModels);
         }
 
+        [HttpGet("province/{id}")]
+        public IActionResult GetAllByProvinceId(int id)
+        {
+            _logger.LogInformation("Get a municipe");
+            var province = _municipeService.GetAllByProvinceId(id);
+
+            return Ok(province);
+        }
+
         [HttpGet("{id}")]
         public IActionResult GetById(int id)
         {

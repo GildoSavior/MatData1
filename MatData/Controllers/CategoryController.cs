@@ -26,7 +26,7 @@ namespace MatData.Controllers
             return Ok(_categoryService.GetAllCategories());
         }
 
-        [HttpGet("{categoryId}")]
+        [HttpGet("{categoryId}", Name="ThemesByCategoryId")]
         public IActionResult GetThemesByCategoryId(int categoryId)
         {
             _logger.LogInformation("Getting themes by category id");

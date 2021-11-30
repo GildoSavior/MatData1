@@ -115,5 +115,13 @@ namespace MatData.Services.NeighborhoodVillage
 
             return new { Page = page, Total = totalPages };
         }
+
+        public List<Models.NeighborhoodVillage> GetAllByUrbanDistrictCommuneId(int id)
+        {
+            return _db.NeighborhoodVillages
+                .Include(u => u.UrbanDistrictCommune)
+                .Where(u => u.UrbanDistrictCommune.Id == id)
+                .ToList();
+        }
     }
 }

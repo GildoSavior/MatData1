@@ -95,5 +95,14 @@ namespace MatData.Services.Municipe
                 .Include(municipe => municipe.Province)
                 .First(municipe => municipe.Id == id);
         }
+
+        public List<Models.Municipe> GetAllByProvinceId(int id)
+        {
+            return _db.Municipes
+                .Include(m => m.Province)
+                .Where(municipe => municipe.Province.Id == id)
+                .ToList();
+        }
+
     }
 }

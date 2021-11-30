@@ -18,6 +18,14 @@ namespace MatData.Controllers
             _indicatorService = indicatorService;
         }
 
+        [HttpGet("indicator-by/{id}")]
+        public IActionResult GetIndicatorById(int id)
+        {
+            _logger.LogInformation("Getting quiz by id");
+
+            return Ok(_indicatorService.GetIndicatorById(id));
+        }
+
         [HttpGet("/indicator-response/{indicatorId}")]
         public IActionResult GetIndicatorResponseByIndicatorId(int indicatorId)
         {

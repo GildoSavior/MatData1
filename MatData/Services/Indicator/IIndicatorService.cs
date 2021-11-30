@@ -6,5 +6,6 @@ namespace MatData.Services.Indicator
     {
         List<Models.Indicator> GetIndicatorsByTheme(int themeId);
         Models.IndicatorResponse GetIndicatorResponseById(int indicatorId);
+        Models.Indicator GetIndicatorById(int id);
     }
 }

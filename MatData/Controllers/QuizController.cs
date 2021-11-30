@@ -1,4 +1,5 @@
 ﻿using MatData.Services.Category;
+using MatData.Services.Indicator;
 using MatData.Services.Municipe;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
@@ -7,39 +8,25 @@ namespace MatData.Controllers
 {
     [Route("api/v1/[controller]")]
     [ApiController]
-    public class CategoryController : ControllerBase
+    public class QuizController : ControllerBase
     {
         private readonly ILogger<CategoryController> _logger;
-        private readonly ICategoryService _categoryService;
+        private readonly IIndicatorService _indicatorService;
 
-        public CategoryController(ILogger<CategoryController> logger, ICategoryService categoryService)
+        public QuizController(ILogger<CategoryController> logger, IIndicatorService indicatorService)
         {
             _logger = logger;
-            _categoryService = categoryService;
+            _indicatorService = indicatorService;
         }
 
-        [HttpGet]
-        public IActionResult GetAll()
+        [HttpGet("{themeId}")]
+        public IActionResult GetQuizByThemeId(int themeId)
         {
-            _logger.LogInformation("Getting categories");
+            _logger.LogInformation("Getting quiz by theme id");
 
-            return Ok(_categoryService.GetAllCategories());
+            return Ok(_indicatorService.GetIndicatorsByTheme(themeId));
         }
 
-        [HttpGet("{categoryId}", Name="ThemesByCategoryId")]
-        public IActionResult GetThemesByCategoryId(int categoryId)
-        {
-            _logger.LogInformation("Getting themes by category id");
-
-            return Ok(_categoryService.GetThemesByCategoryId(categoryId));
-        }
-
-        [HttpGet("{themeId}", Name = "ThemesByCategoryId")]
-        public IActionResult GetThemesByCategoryId(int categoryId)
-        {
-            _logger.LogInformation("Getting themes by category id");
-
-            return Ok(_categoryService.GetThemesByCategoryId(categoryId));
-        }
+        
     }
 }

@@ -8,5 +8,6 @@ namespace MatData.Services.UrbanDistrictCommune
         ServiceResponse<Models.UrbanDistrictCommune> CreateUrbanDistrictCommune(Models.UrbanDistrictCommune urbanDistrictCommune);
         ServiceResponse<bool> DeleteUrbanDistrictCommune(int id);
         Models.UrbanDistrictCommune GetById(int id);
+        List<Models.UrbanDistrictCommune> GetAllByMunicipeId(int id);
     }
 }

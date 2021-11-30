@@ -25,8 +25,12 @@ namespace MatData.Services.Indicator
         {
             return _db.Indicators
                 .Where(i => i.Theme.Id == themeId)
-                .Include(i => i.Theme)
                 .ToList();
+        }
+
+        public Models.Indicator GetIndicatorById(int id)
+        {
+            return _db.Indicators.Find(id);
         }
     }
 }
