@@ -25,14 +25,14 @@
          public string Website{get; set;}
          public string IdPrincipaisProdProduzidos{get; set;}
          //Acesso a Sistemas de Apoio à actividade industrial
-         public string SisApoioBeneficiou{get; set;}
+         public string[] SisApoioBeneficiou{get; set;}
          public string IdEntidadesApoio{get; set;}
          public double ValCredSectorAnoCorr{get; set;}
          public double ValCredSectorUltimos5Anos{get; set;}
          //Movimento Associativo
          public string PertenceAssociacao{get; set;}
          public string IdAssociacao{get; set;}
-         public string PrincipBeneficios{get; set;}
+         public string[] PrincipBeneficios{get; set;}
          //Produto de maior produção(PMP)
          public string IdProdutoPMP{get; set;}
          public string QtdProdProduzidoAnoTransPMP{get; set;}

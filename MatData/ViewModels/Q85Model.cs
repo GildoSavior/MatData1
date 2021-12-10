@@ -31,7 +31,7 @@
          public double TaxaMedOcupacaoAnoTrans {get; set;}
          public double TaxaMedcupacaoMensal {get; set;}
          //Acesso a Sistemas de Apoio à actividade comercial {get; set;}
-         public string SisApoioBeneficiou {get; set;}
+         public string[] SisApoioBeneficiou {get; set;}
          public string IdEntidadesApoio {get; set;}
          public double ValCredSectorAnoCorr {get; set;}
          public double ValCredSectorUltimos5Anos {get; set;}

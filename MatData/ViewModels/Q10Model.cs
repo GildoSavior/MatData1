@@ -10,6 +10,7 @@
         public string Membership { get; set; }
         public string AdmissionMethod { get; set; }
         public string AppointmentDate { get; set; }
+        public string LimiteTerritorial { get; set; }
         public string AdministrationRecognition { get; set; }
         public string EarnsSubsidy { get; set; }
         public string Comments { get; set; }

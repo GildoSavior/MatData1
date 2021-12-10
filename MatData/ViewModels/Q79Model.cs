@@ -22,21 +22,21 @@
           public double NumTotalHectExploradosCampCurso {get; set;}
           public double NumTotalHectDispoCultivCampCurso {get; set;}
            //Acesso a Sistemas de Apoio à Produção {get; set;}
-          public string SistemaApoioProducao {get; set;}
+          public string[] SistemaApoioProducao {get; set;}
           public string IdEntidadesApoio {get; set;}
           public double ValorCreditosAgropecuariosAC {get; set;}
           public double ValorCreditosAgropecuariosUlt5Anos {get; set;}
           //Movimento Associativo 
           public string PertenceAssociacao {get; set;}
           public string IdAssociacao {get; set;}
-          public string PrincipaisBenef {get; set;}
+          public string[] PrincipaisBenef {get; set;}
            //Produção
-          public string ProdFileiraCereais {get; set;}
-          public string ProdFileiraLeguminosas {get; set;}
-          public string ProdFileiraRaizes {get; set;}
-          public string ProdFileiraHorticolas {get; set;}
-          public string ProdFileiraFruticolas {get; set;}
-          public string ProdOutrasFileirasProduzidos {get; set;}
+          public string[] ProdFileiraCereais {get; set;}
+          public string[] ProdFileiraLeguminosas {get; set;}
+          public string[] ProdFileiraRaizes {get; set;}
+          public string[] ProdFileiraHorticolas {get; set;}
+          public string[] ProdFileiraFruticolas {get; set;}
+          public string[] ProdOutrasFileirasProduzidos {get; set;}
            //Cultura de maior produção(CMP) 
           public string IdCMP {get; set;}
           public double VolProdCultCampTransCMP {get; set;}

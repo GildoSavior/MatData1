@@ -18,9 +18,10 @@ namespace MatData.Serialization
                 Membership = model.q1011,
                 AdmissionMethod = model.q1012,
                 AppointmentDate = model.q1013 ,
-                AdministrationRecognition = model.q1014,
-                EarnsSubsidy = model.q1015,
-                Comments = model.q1016,
+                LimiteTerritorial = model.q1014,
+                AdministrationRecognition = model.q1015,
+                EarnsSubsidy = model.q1016,
+                Comments = model.q1017,
             };
         }
     }

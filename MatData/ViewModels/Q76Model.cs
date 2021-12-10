@@ -19,7 +19,7 @@
         public string AreSuportTransAereos {get; set;}
         public int NumAeronaves {get; set;}
         public string Companhias {get; set;}
-        public string IdTipologiaPercursos {get; set;}
+        public string[] IdTipologiaPercursos {get; set;}
         public string TipEstruturArea {get; set;}
         public string EstadoConservArea {get; set;}
         public string TipoEstruturaCais {get; set;}

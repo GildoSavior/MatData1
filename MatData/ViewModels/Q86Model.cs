@@ -20,7 +20,7 @@
         public string Email {get; set;}
         public string Website {get; set;}
         //Acesso a Sistemas de Apoio à actividade de Prestação de Serviços
-        public string SisApoioBeneficiou {get; set;}
+        public string[] SisApoioBeneficiou {get; set;}
         public string IdEntidadesApoio {get; set;}
         public double ValCredSectorAnoCorr {get; set;}
         public double ValCredSectorUltimos5Anos {get; set;}

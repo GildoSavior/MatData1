@@ -8,7 +8,7 @@
         string q705,
         string q706,
         string q707,
-        string q708,
+        string[] q708,
         string q709,
         string q710,
         string q711,

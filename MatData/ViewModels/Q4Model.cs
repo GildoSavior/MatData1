@@ -14,7 +14,7 @@
         public string PhoneNumber { get; set; }
         public string Email { get; set; }
         public int TotalServices { get; set; }
-        public string ExistentServicesList { get; set; }
+        public string[] ExistentServicesList { get; set; }
         public string BuildingTypology { get; set; }
         public string ConservationState { get; set; }
         public string BuildingDate { get; set; }

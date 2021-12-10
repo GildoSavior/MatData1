@@ -23,7 +23,7 @@
         string q8620,
         string q8621,
         string q8622,
-        string q8623,
+        string[] q8623,
         string q8624,
         string q8625,
         string q8626,

@@ -1521,8 +1521,10 @@ namespace MatData.Services.DynamicProfile
                                     CreatedOn = now,
                                     UpdatedOn = now,
                                     Year = model.Year,
+
+
                                     InstanceId = record.InstanceId,
-                                    Data = JsonConvert.SerializeObject(Q53apper.Serialize(quiz.Data)),
+                                    Data = JsonConvert.SerializeObject(Q52Mapper.Serialize(quiz.Data)),
                                     Indicator = _db.Indicators.Find(52),
                                     Province = _db.Provinces.FirstOrDefault(p => p.Name == props["q5201"]),
                                     Municipe = _db.Municipes.FirstOrDefault(p => p.Name == props["q5202"]),
@@ -1551,12 +1553,11 @@ namespace MatData.Services.DynamicProfile
                                     UpdatedOn = now,
                                     Year = model.Year,
                                     InstanceId = record.InstanceId,
-                                    Data = JsonConvert.SerializeObject(Q53apper.Serialize(quiz.Data)),
+                                    Data = JsonConvert.SerializeObject(Q53Mapper.Serialize(quiz.Data)),
                                     Indicator = _db.Indicators.Find(53),
                                     Province = _db.Provinces.FirstOrDefault(p => p.Name == props["q5301"]),
                                     Municipe = _db.Municipes.FirstOrDefault(p => p.Name == props["q5302"]),
                                 });
-
                                 _db.SaveChanges();
                             }
 
@@ -1731,8 +1732,8 @@ namespace MatData.Services.DynamicProfile
                                     Indicator = _db.Indicators.Find(59),
                                     Province = _db.Provinces.FirstOrDefault(p => p.Name == props["q5901"]),
                                     Municipe = _db.Municipes.FirstOrDefault(p => p.Name == props["q5902"]),
-                                    UrbanDistrictCommune = _db.UrbanDistrictCommunes.FirstOrDefault(p => p.Name == props["q5603"]),
-                                    NeighborhoodVillage = _db.NeighborhoodVillages.FirstOrDefault(p => p.Name == props["q5604"]),
+                                    UrbanDistrictCommune = _db.UrbanDistrictCommunes.FirstOrDefault(p => p.Name == props["q5903"]),
+                                    NeighborhoodVillage = _db.NeighborhoodVillages.FirstOrDefault(p => p.Name == props["q5904"]),
                                 });
 
                                 _db.SaveChanges();
@@ -2889,6 +2890,7 @@ namespace MatData.Services.DynamicProfile
                 }
                 catch (Exception e)
                 {
+                    Console.WriteLine(e.Message);
                     return new ServiceResponse<bool>
                     {
                         Data = false,

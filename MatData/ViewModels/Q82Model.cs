@@ -18,19 +18,19 @@
         public string EntidadeCertificacaoAmbiental {get; set;}
         public string NumCertificacao {get; set;}
         public string IdServico {get; set;}
-        public string Contacto {get; set;}
+        public int Contacto {get; set;}
         public string Email {get; set;}
         public string Website {get; set;}
         public double PercentMateriaPrimaTransformada {get; set;}
          //Acesso a Sistemas de Apoio à actividade extractiva 
         public string SisApoioBeneficiou {get; set;}
         public string IdEntidadesApoio {get; set;}
-        public double ValCredSectorAnoCorr {get; set;}
-        public double ValCredSectorUltimos5Anos {get; set;}
+        public string ValCredSectorAnoCorr {get; set;}
+        public string ValCredSectorUltimos5Anos {get; set;}
         //Movimento Associativo 
         public string PertenceAssociacao {get; set;}
         public string IdAssociacao {get; set;}
-        public string PrincipaisBenef {get; set;}
+        public string[] PrincipaisBenef {get; set;}
          //Actividade Extractiva 
         public string MateriaPrimaExtraida {get; set;}
         public string IdLocaisExploracao {get; set;}
@@ -55,9 +55,9 @@
         public string IdlocaisExtraccaoTMPE {get; set;}
         public string QtdMPMEExtraidaAnoTransactoTMPE {get; set;}
         public string QtdMPMETrimestralmenteTMPE {get; set;}
-        public double CustosExtraccaoMPUnTMPE {get; set;}
-        public double ValVendaMPUnTMPE {get; set;}
-        public double PrecoComercializacaoUnTMPE {get; set;}
+        public string CustosExtraccaoMPUnTMPE {get; set;}
+        public string ValVendaMPUnTMPE {get; set;}
+        public string PrecoComercializacaoUnTMPE {get; set;}
          //Escoamento da matéria-prima e condições de armazenamento e transporte {get; set;}
         public int NVeiculosPropriosEscoamento {get; set;}
         public int NVeiculosContratualizadosAnoTransactoEscoamento {get; set;}
@@ -65,13 +65,13 @@
         //Indicadores do Negócio {get; set;}
         public int NumClientes {get; set;}
         public int NumMensalCliente {get; set;}
-        public double DespesasMensais {get; set;}
-        public double ReceitasMensais {get; set;}
-        public double LucroMensal {get; set;}
+        public string DespesasMensais {get; set;}
+        public string ReceitasMensais {get; set;}
+        public string LucroMensal {get; set;}
         public string ContabilidadeOrganizada {get; set;}
-        public double VolumeNegocios {get; set;}
+        public string VolumeNegocios {get; set;}
         public string SituacaoTributRegularizada {get; set;}
-        public double ValorLiqImpostos {get; set;}
+        public string ValorLiqImpostos {get; set;}
         //Força de Trabalho {get; set;}
         public int NumDirProd {get; set;}
         public int NumEspecialistas {get; set;}

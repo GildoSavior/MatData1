@@ -6,13 +6,12 @@
         public int TotalManCMAC { get; set; }
         public int TotalMemberCMAC 
         {
-            get { return TotalWomanCMAC + TotalWomanCMAC; } 
+            get { return TotalWomanCMAC + TotalManCMAC; } 
         }
         public int TotalOrgCMAC { get; set; }
-        public string OrgCMACLists { get; set; }
+        public string[] OrgCMACLists { get; set; }
         public string IdDispatchCMAC { get; set; }
         public string StartDateCMAC { get; set; }
-        public int TotalMeetingCMAC { get; set; }
         public string ExistsReguInternal { get; set; }
         public int TotalMeetingByYear { get; set; }
         public string ExistsAgendaByMeeting { get; set; }

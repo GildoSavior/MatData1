@@ -22,14 +22,14 @@
         public int NumEfectSuinoCriAnoTrans {get;set;}
         public int NumEfectAvesCriAnoTrans {get;set;}
         //Acesso a Sistemas de Apoio à Produção(SAP)
-        public string SAPBeneficiou {get;set;}
+        public string[] SAPBeneficiou {get;set;}
         public string IdEntidadesApoio {get;set;}
         public double ValSubscritoCredAgropecAnoCorr {get;set;}
         public double ValSubscritoCredAgropecUltimos5Anos {get;set;}
         //Movimento Associativo
         public string ProdutorPertenceAssoc {get;set;}
         public string IdAssoc {get;set;}
-        public string PrincipBeneficios {get;set;}
+        public string[] PrincipBeneficios {get;set;}
         public string ProdutorPertenceCoop {get;set;}
         public string IdCooperativa {get;set;}
         public string PrincipaisBenefCoop {get;set;}

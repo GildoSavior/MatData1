@@ -1,4 +1,5 @@
-﻿using MatData.Models.Records;
+﻿using System;
+using MatData.Models.Records;
 using MatData.ViewModels;
 
 namespace MatData.Serialization
@@ -21,7 +22,11 @@ namespace MatData.Serialization
                 PhoneNumber = model.q415,
                 Email = model.q416,
                 TotalServices = model.q418,
-                //ExistentServicesList = Q4Helper.verify();
+                ExistentServicesList = model.q406 == "A" ?
+                    model.q419 : model.q406 == "B" ?
+                    model.q420 : model.q406 == "C" ?
+                    model.q421 : model.q406 == "D" ?
+                    model.q422 : Array.Empty<string>(),
                 BuildingTypology = model.q423,
                 ConservationState = model.q424,
                 BuildingDate = model.q425,

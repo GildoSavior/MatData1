@@ -31,14 +31,14 @@
         public double QtdSalExtraido {get;set;}
         public string QtdProdOutrosSubProdutos {get;set;}
          //Acesso a Sistemas de Apoio à Produção
-        public string SistemasApoioProducao {get;set;}
+        public string[] SistemasApoioProducao {get;set;}
         public string IdEntidadesApoio {get;set;}
         public double ValCredAnoCorrente {get;set;}
         public double ValCredUltimos5Anos {get;set;}
         //Movimento Associativo {get;set;}
         public string PertenceAssociacao {get;set;}
         public string IdAssociacao {get;set;}
-        public string PrincipaiBeneficios {get;set;}
+        public string[] PrincipaiBeneficios {get;set;}
          //Captura anual {get;set;}
         public double QtdSardinhaCapturada {get;set;}
         public double QtdCarapauCapturada {get;set;}

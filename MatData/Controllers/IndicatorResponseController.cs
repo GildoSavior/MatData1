@@ -26,7 +26,7 @@ namespace Matdata.API.Controllers
             _db = db;
         }
 
-        [HttpGet("query/sigle")]
+        [HttpGet("query/single")]
         public async Task<IActionResult> GetRow([FromQuery] QueryVM query)
         {
             var queryIResponse = _db.IndicatorResponses.AsQueryable();
@@ -70,21 +70,54 @@ namespace Matdata.API.Controllers
                 .SingleOrDefaultAsync()
             );
 
-            _logger.LogInformation(query.Year);
-            _logger.LogInformation(query.IndicatorId.ToString());
-            _logger.LogInformation(query.ProvinceId.ToString());
-            _logger.LogInformation(query.MunicipeId.ToString());
-            _logger.LogInformation(query.UrbanDistrictCommuneId.ToString());
-            _logger.LogInformation(query.NeighborhoodVillageId.ToString());
-
             return Ok(result);
 
         }
 
         [HttpGet("query/list")]
-        public IActionResult GetRows([FromQuery] QueryVM model)
+        public async Task<IActionResult> GetRows([FromQuery] QueryVM query)
         {
-            return Ok(model);
+            var queryIResponse = _db.IndicatorResponses.AsQueryable();
+
+            if (query.IndicatorId != 0)
+            {
+                queryIResponse = queryIResponse.Where(q => q.IndicatorId == query.IndicatorId);
+            }
+
+            if (query.ProvinceId != 0)
+            {
+                queryIResponse = queryIResponse.Where(q => q.ProvinceId == query.ProvinceId);
+            }
+
+            if (query.MunicipeId != 0)
+            {
+                queryIResponse = queryIResponse.Where(q => q.MunicipeId == query.MunicipeId);
+            }
+
+            if (query.UrbanDistrictCommuneId != 0)
+            {
+                queryIResponse = queryIResponse.Where(q => q.UrbanDistrictCommuneId == query.UrbanDistrictCommuneId);
+            }
+
+            if (query.NeighborhoodVillageId != 0)
+            {
+                queryIResponse = queryIResponse.Where(q => q.NeighborhoodVillageId == query.NeighborhoodVillageId);
+            }
+
+            if (query.Year != "")
+            {
+                queryIResponse = queryIResponse.Where(q => q.Year == query.Year);
+            }
+
+            var result = await queryIResponse
+                .Include(i => i.Province)
+                .Include(i => i.Municipe)
+                .Include(i => i.UrbanDistrictCommune)
+                .Include(i => i.NeighborhoodVillage)
+                .Select(i => IndicatorResponseMapper.Serialize(i))
+                .ToListAsync();
+
+            return Ok(result);
         }
     }
 }

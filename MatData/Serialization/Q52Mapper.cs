@@ -3,7 +3,7 @@ using MatData.ViewModels;
 
 namespace MatData.Serialization
 {
-    public static class Q53apper
+    public static class Q52Mapper
     {
         public static Q52Model Serialize(Q52Record model)
         {

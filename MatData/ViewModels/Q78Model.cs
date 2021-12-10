@@ -13,12 +13,12 @@
           public double NumTotalHectDispCultivo {get; set;}
           public double NumTotalHectExplorad {get; set;}
           public double NumTotalHectDispCampCurso {get; set;}
-          public string ProdFileiraCereaisCampAnter {get; set;}
-          public string ProdFileiraLegumesCampAnter {get; set;}
-          public string ProdFileiraRaizCampAnter {get; set;}
-          public string ProdFileiraHorticolasCampAnter {get; set;}
-          public string ProdFileiraFrutCampAnter {get; set;}
-          public string ProdOutrasFileiras {get; set;}
+          public string[] ProdFileiraCereaisCampAnter {get; set;}
+          public string[] ProdFileiraLegumesCampAnter {get; set;}
+          public string[] ProdFileiraRaizCampAnter {get; set;}
+          public string[] ProdFileiraHorticolasCampAnter {get; set;}
+          public string[] ProdFileiraFrutCampAnter {get; set;}
+          public string[] ProdOutrasFileiras {get; set;}
           //Pecuária de subsistência / familiar(PS) {get; set;}
           public int NumAgregPraticamPecuaria {get; set;}
           public int NumAgregConsomemPS {get; set;}
