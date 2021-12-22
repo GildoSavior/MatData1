@@ -2,6 +2,7 @@
 {
     public class Q65Model
     {
+        public string ExistPlanoSanit { get; set;}
         public string ExistSisEsgotosSanit {get; set;}
         public string ExistSisRecolhaAREI {get; set;}
         public string ExistSisGestAP {get; set;}

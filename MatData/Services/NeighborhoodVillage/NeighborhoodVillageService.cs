@@ -123,5 +123,7 @@ namespace MatData.Services.NeighborhoodVillage
                 .Where(u => u.UrbanDistrictCommune.Id == id)
                 .ToList();
         }
+
+        
     }
 }

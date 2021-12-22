@@ -9,5 +9,6 @@ namespace MatData.Services.UrbanDistrictCommune
         ServiceResponse<bool> DeleteUrbanDistrictCommune(int id);
         Models.UrbanDistrictCommune GetById(int id);
         List<Models.UrbanDistrictCommune> GetAllByMunicipeId(int id);
+        Models.UrbanDistrictCommune GetUrbanDistrictCommuneByName(string name);
     }
 }

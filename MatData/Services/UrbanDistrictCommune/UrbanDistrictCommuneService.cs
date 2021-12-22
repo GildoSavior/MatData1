@@ -104,5 +104,12 @@ namespace MatData.Services.UrbanDistrictCommune
                 .Where(u => u.Municipe.Id == id)
                 .ToList();
         }
+
+        public Models.UrbanDistrictCommune GetUrbanDistrictCommuneByName(string name)
+        {
+            return _db.UrbanDistrictCommunes
+                .Where(u => u.Name == name)
+                .FirstOrDefault();
+        }
     }
 }

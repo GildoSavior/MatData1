@@ -39,6 +39,16 @@ namespace MatData.Controllers
             return Ok(urbanDistrictCommuneModels);
         }
 
+
+        [HttpGet("ByName/{name}")]
+        public IActionResult GetByName(string name)
+        {
+            _logger.LogInformation("Get a UrbanDistrictCommune by name");
+            var result = _urbanDistrictCommuneService.GetUrbanDistrictCommuneByName(name);
+
+            return Ok(result);
+        }
+
         [HttpGet("municipality/{id}")]
         public IActionResult GetAllByMunicipeId(int id)
         {

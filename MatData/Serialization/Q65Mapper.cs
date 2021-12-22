@@ -9,6 +9,7 @@ namespace MatData.Serialization
         {
             return new Q65Model
             {
+                ExistPlanoSanit = model.q6505,
                 ExistSisEsgotosSanit = model.q6506,
                 ExistSisRecolhaAREI = model.q6507,
                 ExistSisGestAP = model.q6508,
