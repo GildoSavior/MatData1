@@ -2,20 +2,20 @@
 {
     public class Q9Model
     {
-        public int TotalWomenCMCS { get; set; }
-        public int TotalMenCMCS { get; set; }
-        public int TotalMembersCMCS
+        public int TotalWomenCMVC { get; set; }
+        public int TotalMenCMVC { get; set; }
+        public int TotalMembersCMVC
         {
             get
             {
 
-                return TotalWomenCMCS + TotalMenCMCS;
+                return TotalWomenCMVC + TotalMenCMVC;
             }
         }
-        public int TotalOrgCMCS { get; set; }
-        public string orgCMCSLists { get; set; }
-        public string ExistsInRegCMCS { get; set; }
-        public string TotalMeetingCMCSByYear { get; set; }
+        public int TotalOrgCMVC { get; set; }
+        public string orgCMVCLists { get; set; }
+        public string ExistsInRegCMVC { get; set; }
+        public string TotalMeetingCMVCByYear { get; set; }
         public string ExistsAgendaByMeeting { get; set; }
         public string ExistsActaByMeeting { get; set; }
         public string Comments { get; set; }

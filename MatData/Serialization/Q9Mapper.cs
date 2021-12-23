@@ -10,15 +10,15 @@ namespace MatData.Serialization
         {
             return new Q9Model
             {
-                TotalWomenCMCS = Int32.Parse(record.q904),
-                TotalMenCMCS = Int32.Parse(record.q905),
-                TotalOrgCMCS = Int32.Parse(record.q907),
-                orgCMCSLists = record.q908,
-                ExistsInRegCMCS = record.q909,
-                TotalMeetingCMCSByYear = record.q910,
+                TotalWomenCMVC = Int32.Parse(record.q904),
+                TotalMenCMVC = Int32.Parse(record.q905),
+                TotalOrgCMVC = Int32.Parse(record.q907),
+                orgCMVCLists = record.q908,
+                ExistsInRegCMVC = record.q909,
+                TotalMeetingCMVCByYear = record.q910,
                 ExistsAgendaByMeeting = record.q911,
                 ExistsActaByMeeting = record.q912,
-                Comments = record.q913,
+                Comments = record.q913
             };
         }
     }

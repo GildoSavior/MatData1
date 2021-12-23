@@ -1,4 +1,5 @@
-﻿using MatData.Models.Records;
+﻿using System;
+using MatData.Models.Records;
 using MatData.ViewModels;
 
 namespace MatData.Serialization
@@ -12,7 +13,10 @@ namespace MatData.Serialization
                 NomdePersonalidadeReconhecidaComoImportanteHistoriaLocal = model.q1406,
                 DataEventoPersonalidadeSeTornouImportanteLocal = model.q1407,
                 PeriodoPersonalidadeEsteveAssociadaLocal = model.q1408,
-                ActosRealizadosPelaPersonalidade = model.q1409,
+                ActosRealizadosPelaPersonalidade = model.q1409.Contains(",") ?
+                    model.q1409.Split(",") :
+                    model.q1409.Contains(", ") ? model.q1409.Split(",") :
+                    string.IsNullOrEmpty(model.q1409) ? Array.Empty<string>() : new string[] { model.q1409 },
                 Observacoes = model.q1410
             };
         }

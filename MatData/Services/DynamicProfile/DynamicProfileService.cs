@@ -589,9 +589,9 @@ namespace MatData.Services.DynamicProfile
                                 {
                                     CreatedOn = now,
                                     UpdatedOn = now,
-                                    Year = model.Year,
+                                    Year = props["q1806"],
                                     InstanceId = record.InstanceId,
-                                    Data = JsonConvert.SerializeObject(Q17Mapper.Serialize(quiz.Data)),
+                                    Data = JsonConvert.SerializeObject(Q18Mapper.Serialize(quiz.Data)),
                                     Indicator = _db.Indicators.Find(18),
                                     Province = _db.Provinces.FirstOrDefault(p => p.Name == props["q1801"]),
                                     Municipe = _db.Municipes.FirstOrDefault(p => p.Name == props["q1802"]),

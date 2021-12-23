@@ -56,7 +56,7 @@ namespace Matdata.API.Controllers
                 queryIResponse = queryIResponse.Where(q => q.NeighborhoodVillageId == query.NeighborhoodVillageId);
             }
 
-            if (query.Year != "")
+            if (query.Year != null && query.Year != "")
             {
                 queryIResponse = queryIResponse.Where(q => q.Year == query.Year);
             }
@@ -104,7 +104,7 @@ namespace Matdata.API.Controllers
                 queryIResponse = queryIResponse.Where(q => q.NeighborhoodVillageId == query.NeighborhoodVillageId);
             }
 
-            if (query.Year != "")
+            if (query.Year != null && query.Year != "")
             {
                 queryIResponse = queryIResponse.Where(q => q.Year == query.Year);
             }

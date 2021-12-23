@@ -9,9 +9,9 @@ namespace MatData.Serialization
         {
             return new Q13Model
             {
-                DataAcontecimentoQueMarcouAHistoriaLocal = model.q1305,
-                DescricaoAcontecimento = model.q1306,
-                Observacoes = model.q1307
+                DataAcontecimentoQueMarcouAHistoriaLocal = model.q1306,
+                DescricaoAcontecimento = model.q1307,
+                Observacoes = model.q1308
             };
         }
     }

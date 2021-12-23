@@ -10,7 +10,7 @@ namespace Matdata.API.ViewModels
         public int MunicipeId { get; set; } = 0;
         public int UrbanDistrictCommuneId { get; set; } = 0;
         public int NeighborhoodVillageId { get; set; } = 0;
-        public string Year { get; set; } = DateTime.Now.Year.ToString();
+        public string? Year { get; set; }
     }
 }
 
