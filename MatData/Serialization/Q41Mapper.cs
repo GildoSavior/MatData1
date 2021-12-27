@@ -15,7 +15,7 @@ namespace MatData.Serialization
                 NomeEstruturaSaude = model.q4107,
                 Genero = model.q4108,
                 DataNascimento = model.q4109,
-                PrivinciaNascimento = model.q4110,
+                ProvinciaNascimento = model.q4110,
                 MunicipioNascimento = model.q4111,
                 AreaFormacao = model.q4112,
                 NivelAcadenicoMaisElavadoCompleto = model.q4113,

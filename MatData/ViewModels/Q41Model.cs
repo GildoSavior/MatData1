@@ -8,7 +8,7 @@
         public string NomeEstruturaSaude { get; set; }
         public string Genero { get; set; }
         public string DataNascimento { get; set; }
-        public string PrivinciaNascimento { get; set; }
+        public string ProvinciaNascimento { get; set; }
         public string MunicipioNascimento { get; set; }
         public string AreaFormacao { get; set; }
         public string NivelAcadenicoMaisElavadoCompleto { get; set; }

@@ -1206,7 +1206,7 @@ namespace MatData.Services.DynamicProfile
                                     UpdatedOn = now,
                                     Year = model.Year,
                                     InstanceId = record.InstanceId,
-                                    Data = JsonConvert.SerializeObject(Q34Mapper.Serialize(quiz.Data)),
+                                    Data = JsonConvert.SerializeObject(Q41Mapper.Serialize(quiz.Data)),
                                     Indicator = _db.Indicators.Find(41),
                                     Province = _db.Provinces.FirstOrDefault(p => p.Name == props["q4101"]),
                                     Municipe = _db.Municipes.FirstOrDefault(p => p.Name == props["q4102"])
