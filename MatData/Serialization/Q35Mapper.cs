@@ -9,9 +9,9 @@ namespace MatData.Serialization
         {
             return new Q35Model
             {
-                CursosFormacaoTecnicaProfissionalArtisticaEmFuncionamento = model.q3504,
-                CursosFormacaoSuperiorEmFuncionamento = model.q3505,
-                CursosExtensaoUniversitariaEmFuncionamento = model.q3506,
+                CursosFormacaoTecnicaProfissionalArtisticaEmFuncionamento = Helpers.StringToArray(model.q3504),
+                CursosFormacaoSuperiorEmFuncionamento = Helpers.StringToArray(model.q3505),
+                CursosExtensaoUniversitariaEmFuncionamento = Helpers.StringToArray(model.q3506),
                 Observacoes = model.q3507,
             };
         }

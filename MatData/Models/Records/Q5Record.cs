@@ -23,6 +23,7 @@
         string q520,
         string q521,
         string q522,
-        string q523
+        string q523,
+        string q524
         );
 }

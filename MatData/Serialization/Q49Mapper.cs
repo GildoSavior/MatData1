@@ -16,14 +16,14 @@ namespace MatData.Serialization
                 EnderecoDeEmail = model.q4910,
                 Website = model.q4911,
                 ReconhecimentoDaOrganizacaoReligiosaPeloGovernoDeAngola = model.q4912,
-                NumeroDoDecretoPresidencialDeAutorizacao = int.Parse(model.q4913),
+                NumeroDoDecretoPresidencialDeAutorizacao = model.q4913,
                 TipoDeEspacoDeCulto = model.q4914,
                 FotografiaDoEspacoDeCultoFrontal = model.q4915,
                 FotografiaDoEspacoDeCultoOutra = model.q4916,
                 LocalizacaoDoEspacoDeCulto = model.q4917,
                 FrequenciaDeAberturaAComunidade = model.q4918,
                 NumeroMedioDePessoasQueSemanalmenteFrequentamOEspacoDeCulto = int.Parse(model.q4919),
-                Observacões = model.q4920
+                Observacoes = model.q4920
             };
         }
     }

@@ -16,12 +16,14 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
+using Microsoft.Extensions.FileProviders;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 using Microsoft.IdentityModel.Tokens;
 using Microsoft.OpenApi.Models;
 using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -30,8 +32,11 @@ namespace MatData
 {
     public class Startup
     {
-        public Startup(IConfiguration configuration)
-        {
+        private readonly IWebHostEnvironment _environment;
+
+        public Startup(IConfiguration configuration, IWebHostEnvironment environment)
+        { 
+            _environment = environment;
             Configuration = configuration;
         }
 
@@ -41,6 +46,8 @@ namespace MatData
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddCors();
+
+            services.AddDirectoryBrowser();
 
             services.AddControllers().AddNewtonsoftJson(options =>
                 options.SerializerSettings.ReferenceLoopHandling = Newtonsoft.Json.ReferenceLoopHandling.Ignore
@@ -106,9 +113,27 @@ namespace MatData
 
             app.UseHttpsRedirection();
 
-            app.UseRouting();
+            app.UseStaticFiles();
 
-            
+            var fileProvider = new PhysicalFileProvider(
+                Path.Combine(_environment.WebRootPath, "Repository", "ProvinceName"));
+
+            var requestPath = "/Repository";
+
+            // Enable displaying brownswer links
+            app.UseStaticFiles(new StaticFileOptions
+            {
+                FileProvider = fileProvider,
+                RequestPath = requestPath
+            });
+
+            app.UseDirectoryBrowser(new DirectoryBrowserOptions
+            {
+                FileProvider = fileProvider,
+                RequestPath = requestPath
+            });
+
+            app.UseRouting();
 
             app.UseAuthentication();
 

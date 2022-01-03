@@ -9,6 +9,8 @@ namespace MatData.Serialization
         {
             return new Q11Model
             {
+                CensoNumHomens2014 = model.q1106 == "Sim" ? model.q1107 : 0,
+                CensoNumMulheres2014 = model.q1106 == "Sim" ? model.q1108 : 0,
                 TotalMen0Ate4TransactYearsAge = model.q1110,
                 TotalMen5Ate9TransactYearsAge = model.q1111,
                 TotalMen10Ate14TransactYearsAge = model.q1112,

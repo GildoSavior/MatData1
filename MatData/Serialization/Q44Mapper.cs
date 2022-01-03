@@ -23,6 +23,7 @@ namespace MatData.Serialization
                 PessoasInscritasEmOutrasEstruturaLocaisDeProteccãoSocial = model.q4415,
                 NumeroDeAgregadosFamiliaresCadastradosNoProgramaKwenda = int.Parse(model.q4416),
                 NumeroDeAgregadosFamiliaresBeneficiáriosDaTransferênciaDeRendaFixaKwenda = int.Parse(model.q4417),
+
                 NumeroDeCriancasMasculinasDe0a4AnosDeIdadeHospedadosNosLaresDeOrfaos = int.Parse(model.q4418),
                 NumeroDeCriancasMasculinasDe5a9AnosDeIdadeHospedadosNosLaresDeOrfaos = int.Parse(model.q4419),
                 NumeroDeCriancasMasculinasDe10a14AnosDeIdadeHospedadosNosLaresDeOrfaos = int.Parse(model.q4420),
@@ -31,6 +32,7 @@ namespace MatData.Serialization
                 NumeroDeCriancasFemininasDe5a9AnosDeIdadeHospedadasNosLaresDeOrfaos = int.Parse(model.q4423),
                 NumeroDeCriancasFemininasDe10a14AnosDeIdadeHospedadasNosLaresDeOrfaos = int.Parse(model.q4424),
                 NumeroDeCriancasFemininasDe15a18AnosDeIdadeHospedadasNosLaresDeOrfaos = int.Parse(model.q4425),
+
                 CriancasHospedadasNosLaresDeOrfaos = model.q4426,
                 NumeroDeHomensHospedadosNosLaresDe3raIdade = int.Parse(model.q4427),
                 NumeroDeMulheresHospedadasNosLaresDe3raIdade = int.Parse(model.q4428),

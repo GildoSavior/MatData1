@@ -6,6 +6,7 @@
         public string EmployeeNumber { get; set; }
         public string MunicipalStructure { get; set; }
         public string ManagmentPosition { get; set;  }
+        public string CargoDeDireccao { get; set; }
         public string AppointmentDate { get; set; }
         public string Genre { get; set; }
         public string Photo { get; set; }

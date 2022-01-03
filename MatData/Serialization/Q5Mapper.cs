@@ -27,7 +27,8 @@ namespace MatData.Serialization
                 ProfessionalCategory = record.q520,
                 ContractType = record.q521,
                 SupplyCategory = record.q522,
-                Comments = record.q523,
+                CargoDeDireccao = record.q523,
+                Comments = record.q524,
             };
         }
     }

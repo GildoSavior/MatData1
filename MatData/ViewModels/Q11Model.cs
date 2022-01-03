@@ -2,6 +2,8 @@
 {
     public class Q11Model
     {
+        public int CensoNumHomens2014 { get; set; } = 0;
+        public int CensoNumMulheres2014 { get; set; } = 0;
         public int TotalMen0Ate4TransactYearsAge { get; set; }
         public int TotalMen5Ate9TransactYearsAge { get; set; }
         public int TotalMen10Ate14TransactYearsAge { get; set; }
