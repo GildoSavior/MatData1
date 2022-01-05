@@ -10,6 +10,7 @@ namespace MatData.Serialization
             {
                 return new
                 {
+                    Recurso = model.q2006,
                     NomeRio = model.q2007,
                     LocalizacaoRio = model.q2008,
                     Fotografia1 = model.q2009,
@@ -29,6 +30,7 @@ namespace MatData.Serialization
             {
                 return new
                 {
+                    Recurso = model.q2006,
                     NomeLago = model.q2018,
                     LocalizacaoLago = model.q2019,
                     AreaLago = model.q2020,
@@ -42,6 +44,7 @@ namespace MatData.Serialization
             {
                 return new
                 {
+                    Recurso = model.q2006,
                     NomeLagoa = model.q2023,
                     LocalizacaoLagoa = model.q2024,
                     AreaLagoa = model.q2025,
@@ -55,6 +58,7 @@ namespace MatData.Serialization
             {
                 return new
                 {
+                    Recurso = model.q2006,
                     NomeFluxoHidrico = model.q2028,
                     LocalizacaoFluxoHidrico = model.q2029,
                     Fotografia1 = model.q2030,
