@@ -116,7 +116,7 @@ namespace MatData
             app.UseStaticFiles();
 
             var fileProvider = new PhysicalFileProvider(
-                Path.Combine(_environment.WebRootPath, "Repository", "ProvinceName"));
+                Path.Combine(_environment.WebRootPath, "Repository"));
 
             var requestPath = "/Repository";
 

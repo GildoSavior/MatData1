@@ -13,6 +13,7 @@
         public string IdenticationService { get; set; }
         public string PhoneNumber { get; set; }
         public string Email { get; set; }
+        public string Website { get; set; }
         public int TotalServices { get; set; }
         public string[] ExistentServicesList { get; set; }
         public string BuildingTypology { get; set; }

@@ -15,6 +15,7 @@ using CsvHelper;
 using Newtonsoft.Json;
 using static MatData.Serialization.Q35Mapper;
 using Matdata.API.ViewModels;
+using System.IO.Compression;
 
 namespace MatData.Services.DynamicProfile
 {
@@ -33,6 +34,17 @@ namespace MatData.Services.DynamicProfile
         {
             if (file.Length > 0)
             {
+                if (!file.FileName.EndsWith(".zip"))
+                {
+                    return new ServiceResponse<bool>
+                    {
+                        Data = false,
+                        IsSuccess = false,
+                        Message = "Ficheiro invalido",
+                        Time = DateTime.Now
+                    };
+                }
+
                 try
                 {
                     var repositoryPath = Path.Combine(_environment.WebRootPath, "Repository");
@@ -41,7 +53,7 @@ namespace MatData.Services.DynamicProfile
                         Directory.CreateDirectory(repositoryPath);
                     }
 
-                    var destinationPath = Path.Combine(repositoryPath, "ProvinceName");
+                    var destinationPath = Path.Combine(repositoryPath);
 
                     if (!Directory.Exists(destinationPath))
                     {
@@ -59,6 +71,36 @@ namespace MatData.Services.DynamicProfile
                     {
                         HasHeaderRecord = false,
                     };
+
+                    // Ler o Zip
+                    var zipPath = Path.Combine(destinationPath, file.FileName);
+
+                    // Extrar as Images
+                    // Extrair o CSV
+                    try
+                    {
+                        using (ZipArchive archive = ZipFile.OpenRead(zipPath))
+                        {
+                            foreach (ZipArchiveEntry entry in archive.Entries)
+                            {
+                                
+                            }
+                        }
+                    }
+                    catch (Exception e)
+                    {
+                        ZipFile.ExtractToDirectory(zipPath, destinationPath);
+                        // Apagar o zip
+
+                        return new ServiceResponse<bool>
+                        {
+                            Data = false,
+                            IsSuccess = false,
+                            Message = "Erro ao descompactar o zip",
+                            Time = DateTime.Now
+                        };
+                    }
+
 
                     using (var reader = new StreamReader(fileName))
                     using (var csv = new CsvReader(reader, config))
