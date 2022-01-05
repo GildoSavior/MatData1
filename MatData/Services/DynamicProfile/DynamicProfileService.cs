@@ -79,17 +79,35 @@ namespace MatData.Services.DynamicProfile
                     // Extrair o CSV
                     try
                     {
-                        using (ZipArchive archive = ZipFile.OpenRead(zipPath))
+                        using(ZipArchive archive = ZipFile.OpenRead(zipPath))
                         {
                             foreach (ZipArchiveEntry entry in archive.Entries)
                             {
-                                
+                                if (entry.FullName.EndsWith(".csv", StringComparison.OrdinalIgnoreCase))
+                                {
+                                    string csvDestinationPath = Path.GetFullPath(Path.Combine(destinationPath, entry.FullName));
+
+                                    if (csvDestinationPath.StartsWith(destinationPath, StringComparison.Ordinal))
+                                        if (!File.Exists(csvDestinationPath))
+                                            entry.ExtractToFile(csvDestinationPath);
+                                }
+
+                                if (entry.FullName.StartsWith("Images", StringComparison.OrdinalIgnoreCase))
+                                {
+                                    string imageDestinationPath =
+                                        Path.GetFullPath(Path.Combine(destinationPath, entry.FullName));
+
+                                    if (imageDestinationPath.StartsWith(destinationPath, StringComparison.Ordinal))
+                                        if (entry.FullName != "Images/")
+                                            if (!File.Exists(imageDestinationPath))
+                                                entry.ExtractToFile(imageDestinationPath);
+                                }
                             }
                         }
                     }
                     catch (Exception e)
                     {
-                        ZipFile.ExtractToDirectory(zipPath, destinationPath);
+                        Console.WriteLine(e.Message);
                         // Apagar o zip
 
                         return new ServiceResponse<bool>
@@ -101,8 +119,9 @@ namespace MatData.Services.DynamicProfile
                         };
                     }
 
-
-                    using (var reader = new StreamReader(fileName))
+                    var csvPath = Path.Combine(destinationPath,
+                        $"Report-{file.FileName.Split("SIBM-DATA-")[1].Replace(".zip", ".csv")}");
+                    using (var reader = new StreamReader(csvPath))
                     using (var csv = new CsvReader(reader, config))
                     {
                         var records = csv.GetRecords<Quiz>()
@@ -2921,6 +2940,21 @@ namespace MatData.Services.DynamicProfile
                         }
                     }
 
+                    try
+                    {
+                        if (File.Exists(csvPath))
+                            File.Delete(csvPath);
+                    }
+                    catch (Exception e)
+                    {
+                        return new ServiceResponse<bool>
+                        {
+                            Data = false,
+                            IsSuccess = false,
+                            Message = "Erro ao deletar o arquivo csv",
+                            Time = DateTime.Now
+                        };
+                    }
 
                     return new ServiceResponse<bool>
                     {

@@ -19,7 +19,7 @@ namespace MatData.Serialization
                     ExtensaoRio = double.Parse(model.q2013),
                     VolumeAguaNoCacimbo = double.Parse(model.q2014),
                     VolumeAguaNoTempoCalor = double.Parse(model.q2015),
-                    AcidentesNoCursoDoRio = double.Parse(model.q2016),
+                    AcidentesNoCursoDoRio = model.q2016,
                     FotografiaDosAcidentesDoRio = model.q2017,
                     Observacoes = model.q2034,
                 };
