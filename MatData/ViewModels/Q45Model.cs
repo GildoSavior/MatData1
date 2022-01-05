@@ -16,7 +16,12 @@
         public string LotacaoPrevistaDaInfraestruturaDeManutencaoDaJustica { get; set; }
         public int NumeroDeUtentesDeSexoMasculinoDaInfraestruturaDeManutencaoDaJustica { get; set; }
         public int NumeroDeUtentesDeSexoFemininoDaInfraestruturaDeManutencaoDaJustica { get; set; }
-        public int NumeroTotalDeUtentesDaInfraestruturaDeManutencaoDaJustica { get; set; }
+        public int NumeroTotalDeUtentesDaInfraestruturaDeManutencaoDaJustica
+        {
+            get {
+                return NumeroDeUtentesDeSexoMasculinoDaInfraestruturaDeManutencaoDaJustica + NumeroDeUtentesDeSexoFemininoDaInfraestruturaDeManutencaoDaJustica;
+            }
+        }
         public string SituacaoDaInfraestruturaDeManutencaoDaJustica { get; set; }
         public string GestaoDaInfraestruturaDeManutencaoDaJustica { get; set; }
         public string EstadoDeConservacaoDaInfraestruturaDeManutencaoDaJustica { get; set; }

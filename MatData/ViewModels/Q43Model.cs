@@ -18,7 +18,13 @@
         public string LotacaoPrevistaDaInfraestruturaDeProteccaoSocial { get; set; }
         public int NumeroDeUtentesDeSexoMasculinoDaInfraestruturaDeProteccaoSocial { get; set; }
         public int NumeroDeUtentesDeSexoFemininoDaInfraestruturaDeProteccaoSocial { get; set; }
-        public int NumeroTotalDeUtentesDaInfraestruturaDeProteccaoSocial { get; set; }
+        public int NumeroTotalDeUtentesDaInfraestruturaDeProteccaoSocial
+        {
+            get
+            {
+                return NumeroDeUtentesDeSexoMasculinoDaInfraestruturaDeProteccaoSocial + NumeroDeUtentesDeSexoFemininoDaInfraestruturaDeProteccaoSocial;
+            }
+        }
         public string SituacaoDaInfraestruturaDeProteccaoSocial { get; set; }
         public string GestaoDaInfraestruturaDeProteccaoSocial { get; set; }
         public string RegistoLegalDaInfraestruturaNoSectorDeTutela { get; set; }

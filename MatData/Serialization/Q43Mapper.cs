@@ -25,7 +25,6 @@ namespace MatData.Serialization
                 LotacaoPrevistaDaInfraestruturaDeProteccaoSocial = model.q4319,
                 NumeroDeUtentesDeSexoMasculinoDaInfraestruturaDeProteccaoSocial = int.Parse(model.q4320),
                 NumeroDeUtentesDeSexoFemininoDaInfraestruturaDeProteccaoSocial = int.Parse(model.q4321),
-                NumeroTotalDeUtentesDaInfraestruturaDeProteccaoSocial = int.Parse(model.q4322),
                 SituacaoDaInfraestruturaDeProteccaoSocial = model.q4323,
                 GestaoDaInfraestruturaDeProteccaoSocial = model.q4324,
                 RegistoLegalDaInfraestruturaNoSectorDeTutela = model.q4325,

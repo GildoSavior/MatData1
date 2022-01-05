@@ -23,7 +23,6 @@ namespace MatData.Serialization
                 LotacaoPrevistaDaInfraestruturaDeManutencaoDaJustica = model.q4517,
                 NumeroDeUtentesDeSexoMasculinoDaInfraestruturaDeManutencaoDaJustica = int.Parse(model.q4518),
                 NumeroDeUtentesDeSexoFemininoDaInfraestruturaDeManutencaoDaJustica = int.Parse(model.q4519),
-                NumeroTotalDeUtentesDaInfraestruturaDeManutencaoDaJustica = int.Parse(model.q4520),
                 SituacaoDaInfraestruturaDeManutencaoDaJustica = model.q4521,
                 GestaoDaInfraestruturaDeManutencaoDaJustica = model.q4522,
                 EstadoDeConservacaoDaInfraestruturaDeManutencaoDaJustica = model.q4523,
