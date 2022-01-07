@@ -60,7 +60,7 @@ namespace MatData
             services.AddDbContext<AppDbContext>(options =>
             {
                 options.EnableDetailedErrors();
-                options.UseNpgsql(Configuration.GetConnectionString("sigibm.dev"));
+                options.UseNpgsql(Configuration.GetValue<string>("DatabaseSettings:ConnectionString"));
             });
 
             var key = Encoding.ASCII.GetBytes(Configuration.GetValue<string>("JsonWebToken:Secret"));

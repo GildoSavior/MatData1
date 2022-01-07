@@ -1,0 +1,19 @@
+version: '3.4'
+
+services:
+  matdatadb:
+    image: postgres:latest
+
+  pgadmin:
+    image: dpage/pgadmin4
+
+  matdata.api:
+    image: ${DOCKER_REGISTRY-}matdata
+    build:
+      context: .
+      dockerfile: MatData/Dockerfile
+
+volumes:
+  postgres_data:
+  pgadmin_data:
+  

@@ -2,6 +2,8 @@
 
   <PropertyGroup>
     <TargetFramework>net5.0</TargetFramework>
+    <DockerComposeProjectPath>../docker-compose.dcproj</DockerComposeProjectPath>
+    <UserSecretsId>984a7e59-e2eb-405b-bd54-349c541b5314</UserSecretsId>
   </PropertyGroup>
 
   <PropertyGroup Condition=" '$(RunConfiguration)' == 'MatData' " />
@@ -26,9 +28,11 @@
 
   <ItemGroup>
     <Folder Include="wwwroot\" />
+    <Folder Include="Extensions\" />
   </ItemGroup>
 
   <ItemGroup>
     <None Remove="AspNetCore.IQueryable.Extensions" />
+    <None Remove="Extensions\" />
   </ItemGroup>
 </Project>

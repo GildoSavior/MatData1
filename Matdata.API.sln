@@ -5,6 +5,8 @@ VisualStudioVersion = 17.0.31717.71
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Matdata.API", "MatData\Matdata.API.csproj", "{6804F3B7-86BC-4DAB-B5FC-B24E7CA91F07}"
 EndProject
+Project("{E53339B2-1760-4266-BCC7-CA923CBCF16C}") = "docker-compose", "docker-compose.dcproj", "{FE28784C-3F46-4077-8CA7-0B8F5734C025}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{6804F3B7-86BC-4DAB-B5FC-B24E7CA91F07}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6804F3B7-86BC-4DAB-B5FC-B24E7CA91F07}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6804F3B7-86BC-4DAB-B5FC-B24E7CA91F07}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FE28784C-3F46-4077-8CA7-0B8F5734C025}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FE28784C-3F46-4077-8CA7-0B8F5734C025}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FE28784C-3F46-4077-8CA7-0B8F5734C025}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FE28784C-3F46-4077-8CA7-0B8F5734C025}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
