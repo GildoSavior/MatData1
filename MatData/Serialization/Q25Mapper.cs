@@ -13,12 +13,12 @@ namespace MatData.Serialization
                 IdentificacaoAreaProtegida = model.q2507,
                 LocalizacaoPrincipalAcesso = model.q2508,
                 AreaProtegica = model.q2509,
-                Fotografico1 = model.q2510,
-                Fotografico2 = model.q2511,
-                Fotografico3 = model.q2512,
-                Fotografico4 = model.q2511,
-                Fotografico5 = model.q2512,
-                Observacoes = model.q2513,
+                Fotografia1 = model.q2510,
+                Fotografia2 = model.q2511,
+                Fotografia3 = model.q2512,
+                Fotografia4 = model.q2513,
+                Fotografia5 = model.q2514,
+                Observacoes = model.q2515,
             };
         }
     }

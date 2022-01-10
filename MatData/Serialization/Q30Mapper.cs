@@ -30,21 +30,21 @@ namespace MatData.Serialization
                 NumeroAlunas35a39AnosDeIdadeDestaEstruturaEscolar = int.Parse(model.q3024),
                 NumeroAlunas40OuMaisAnosDeIdadeDestaEstruturaEscolar = int.Parse(model.q3025),
 
-                EducacaoPreEscolarMatriculados = int.Parse(model.q3027),
-                EnsinoPrimarioMatriculados = int.Parse(model.q3028),
-                ICicloDoEnsinoSecundarioMatriculados = int.Parse(model.q3029),
-                IiCicloDoEnsinoSecundarioMatriculados = int.Parse(model.q3030),
-                EnsinoTecnicoProfissionalEArtisticoMatriculados = int.Parse(model.q3031),
-                EscolaDeFormacaoDeProfessoresMatriculados = int.Parse(model.q3032),
-                EnsinoSuperiorMatriculados = int.Parse(model.q3033),
-                EducacaoPreEscolarAlunosNaoTerminaram = int.Parse(model.q3034),
-                EnsinoPrimarioNaoTerminaram = int.Parse(model.q3035),
-                ICicloDoEnsinoSecundarioNaoTerminaram = int.Parse(model.q3026),
-                IiCicloDoEnsinoSecundarioNaoTerminaram = int.Parse(model.q3027),
-                EnsinoTecnicoProfissionalEArtisticoNaoTerminaram = int.Parse(model.q3028),
-                EscolaDeFormacaoDeProfessoresNaoTerminaram = int.Parse(model.q3029),
-                EnsinoSuperiorNaoTerminaram = int.Parse(model.q3030),
-                Observacoes = model.q3031
+                EducacaoPreEscolarMatriculados = int.Parse(model.q3028),
+                EnsinoPrimarioMatriculados = int.Parse(model.q3029),
+                ICicloDoEnsinoSecundarioMatriculados = int.Parse(model.q3030),
+                IiCicloDoEnsinoSecundarioMatriculados = int.Parse(model.q3031),
+                EnsinoTecnicoProfissionalEArtisticoMatriculados = int.Parse(model.q3032),
+                EscolaDeFormacaoDeProfessoresMatriculados = int.Parse(model.q3033),
+                EnsinoSuperiorMatriculados = int.Parse(model.q3034),
+                EducacaoPreEscolarAlunosNaoTerminaram = int.Parse(model.q3035),
+                EnsinoPrimarioNaoTerminaram = int.Parse(model.q3036),
+                ICicloDoEnsinoSecundarioNaoTerminaram = int.Parse(model.q3037),
+                IiCicloDoEnsinoSecundarioNaoTerminaram = int.Parse(model.q3038),
+                EnsinoTecnicoProfissionalEArtisticoNaoTerminaram = int.Parse(model.q3039),
+                EscolaDeFormacaoDeProfessoresNaoTerminaram = int.Parse(model.q3040),
+                EnsinoSuperiorNaoTerminaram = int.Parse(model.q3041),
+                Observacoes = model.q3042
             };
         }
     }
