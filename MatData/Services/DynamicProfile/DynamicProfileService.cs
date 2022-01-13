@@ -16,6 +16,7 @@ using Newtonsoft.Json;
 using static MatData.Serialization.Q35Mapper;
 using Matdata.API.ViewModels;
 using System.IO.Compression;
+using Matdata.API.Serialization;
 
 namespace MatData.Services.DynamicProfile
 {
@@ -1188,6 +1189,90 @@ namespace MatData.Services.DynamicProfile
                                 _db.SaveChanges();
                             }
 
+                            if (record.FormId == "Q36")
+                            {
+                                var quiz = QuizMapper.Serialize<Q36Record>(record);
+
+                                var props = new Dictionary<string, string>();
+
+                                foreach (var prop in quiz.Data.GetType().GetProperties())
+                                {
+                                    props.Add(prop.Name, prop.GetValue(quiz.Data, null)?.ToString());
+                                }
+
+                                var now = DateTime.Now;
+
+                                _db.IndicatorResponses.Add(new IndicatorResponse
+                                {
+                                    CreatedOn = now,
+                                    UpdatedOn = now,
+                                    Year = model.Year,
+                                    InstanceId = record.InstanceId,
+                                    Data = JsonConvert.SerializeObject(Q36Mapper.Serialize(quiz.Data)),
+                                    Indicator = _db.Indicators.Find(36),
+                                    Province = _db.Provinces.FirstOrDefault(p => p.Name == props["q3601"]),
+                                    Municipe = _db.Municipes.FirstOrDefault(p => p.Name == props["q3602"])
+                                });
+
+                                _db.SaveChanges();
+                            }
+
+                            if (record.FormId == "Q37")
+                            {
+                                var quiz = QuizMapper.Serialize<Q37Record>(record);
+
+                                var props = new Dictionary<string, string>();
+
+                                foreach (var prop in quiz.Data.GetType().GetProperties())
+                                {
+                                    props.Add(prop.Name, prop.GetValue(quiz.Data, null)?.ToString());
+                                }
+
+                                var now = DateTime.Now;
+
+                                _db.IndicatorResponses.Add(new IndicatorResponse
+                                {
+                                    CreatedOn = now,
+                                    UpdatedOn = now,
+                                    Year = model.Year,
+                                    InstanceId = record.InstanceId,
+                                    Data = JsonConvert.SerializeObject(Q37Mapper.Serialize(quiz.Data)),
+                                    Indicator = _db.Indicators.Find(37),
+                                    Province = _db.Provinces.FirstOrDefault(p => p.Name == props["q3701"]),
+                                    Municipe = _db.Municipes.FirstOrDefault(p => p.Name == props["q3702"])
+                                });
+
+                                _db.SaveChanges();
+                            }
+
+                            if (record.FormId == "Q38")
+                            {
+                                var quiz = QuizMapper.Serialize<Q38Record>(record);
+
+                                var props = new Dictionary<string, string>();
+
+                                foreach (var prop in quiz.Data.GetType().GetProperties())
+                                {
+                                    props.Add(prop.Name, prop.GetValue(quiz.Data, null)?.ToString());
+                                }
+
+                                var now = DateTime.Now;
+
+                                _db.IndicatorResponses.Add(new IndicatorResponse
+                                {
+                                    CreatedOn = now,
+                                    UpdatedOn = now,
+                                    Year = model.Year,
+                                    InstanceId = record.InstanceId,
+                                    Data = JsonConvert.SerializeObject(Q38Mapper.Serialize(quiz.Data)),
+                                    Indicator = _db.Indicators.Find(38),
+                                    Province = _db.Provinces.FirstOrDefault(p => p.Name == props["q3801"]),
+                                    Municipe = _db.Municipes.FirstOrDefault(p => p.Name == props["q3802"])
+                                });
+
+                                _db.SaveChanges();
+                            }
+
                             if (record.FormId == "Q39")
                             {
                                 var quiz = QuizMapper.Serialize<Q39Record>(record);
@@ -1907,7 +1992,7 @@ namespace MatData.Services.DynamicProfile
                                     Year = model.Year,
                                     InstanceId = record.InstanceId,
                                     Data = JsonConvert.SerializeObject(Q63Mapper.Serialize(quiz.Data)),
-                                    Indicator = _db.Indicators.Find(60),
+                                    Indicator = _db.Indicators.Find(63),
                                     Province = _db.Provinces.FirstOrDefault(p => p.Name == props["q6301"]),
                                     Municipe = _db.Municipes.FirstOrDefault(p => p.Name == props["q6302"]),
                                     UrbanDistrictCommune = _db.UrbanDistrictCommunes.FirstOrDefault(p => p.Name == props["q6303"]),
@@ -1936,11 +2021,9 @@ namespace MatData.Services.DynamicProfile
                                     Year = model.Year,
                                     InstanceId = record.InstanceId,
                                     Data = JsonConvert.SerializeObject(Q64Mapper.Serialize(quiz.Data)),
-                                    Indicator = _db.Indicators.Find(60),
+                                    Indicator = _db.Indicators.Find(64),
                                     Province = _db.Provinces.FirstOrDefault(p => p.Name == props["q6401"]),
-                                    Municipe = _db.Municipes.FirstOrDefault(p => p.Name == props["q6402"]),
-                                    UrbanDistrictCommune = _db.UrbanDistrictCommunes.FirstOrDefault(p => p.Name == props["q6403"]),
-                                    NeighborhoodVillage = _db.NeighborhoodVillages.FirstOrDefault(p => p.Name == props["q6404"]),
+                                    Municipe = _db.Municipes.FirstOrDefault(p => p.Name == props["q6402"])
                                 });
 
                                 _db.SaveChanges();

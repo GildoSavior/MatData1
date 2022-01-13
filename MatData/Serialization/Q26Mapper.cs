@@ -6,7 +6,7 @@ namespace MatData.Serialization
     {
         public static dynamic Serialize(Q26Record model)
         {
-            if (model.q2607 == "Erosão")
+            if (model.q2607 == "Área sujeita a erosão do solo")
             {
                 return new
                 {
@@ -20,7 +20,7 @@ namespace MatData.Serialization
                 };
             }
 
-            if (model.q2607 == "Deslizamento-de-terra")
+            if (model.q2607 == "Área sujeita a deslizamento de terra")
             {
                 return new
                 {
@@ -34,7 +34,7 @@ namespace MatData.Serialization
                 };
             }
 
-            if (model.q2607 == "Inundações")
+            if (model.q2607 == "Área sujeita a inundações")
             {
                 return new
                 {
