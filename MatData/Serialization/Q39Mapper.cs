@@ -9,19 +9,15 @@ namespace MatData.Serialization
         {
             return new Q39Model
             {
-                DesignacaodaUnidadedeSaude = model.q3905,
-                TipologiadeUnidadedeSaude = model.q3906,
-                Medicos = int.Parse(model.q3907),
-                EnfermeirosTecnicosSuperiores = int.Parse(model.q3908),
-                EnfermeirosTecnicosMedios = int.Parse(model.q3909),
-                Parteiras = int.Parse(model.q3910),
-                TecnicosdeDiagnostico = int.Parse(model.q3911),
-                OutrosProfissionaisdeSaude = int.Parse(model.q3912),
-                NumerototaldeProfissionaisdeSaudedestaUS = int.Parse(model.q3913),
-                RacioUtenteMedico = int.Parse(model.q3914),
-                RacioUtenteEnfermeiro = int.Parse(model.q3915),
-                RacioUtenteTecnicodeDiagnostico = int.Parse(model.q3916),
-                Observacoes = model.q3917
+                DesignacaodaUnidadedeSaude = model.q3906,
+                TipologiadeUnidadedeSaude = model.q3907,
+                Medicos = int.Parse(model.q3908),
+                EnfermeirosTecnicosSuperiores = int.Parse(model.q3909),
+                EnfermeirosTecnicosMedios = int.Parse(model.q3910),
+                Parteiras = int.Parse(model.q3911),
+                TecnicosdeDiagnostico = int.Parse(model.q3912),
+                OutrosProfissionaisdeSaude = int.Parse(model.q3913),
+                Observacoes = model.q3918
             };
         }
     }

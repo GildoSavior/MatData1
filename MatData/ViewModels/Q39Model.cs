@@ -10,10 +10,18 @@
         public int Parteiras { get; set; }
         public int TecnicosdeDiagnostico { get; set; }
         public int OutrosProfissionaisdeSaude { get; set; }
-        public int NumerototaldeProfissionaisdeSaudedestaUS { get; set; }
-        public int RacioUtenteMedico { get; set; }
-        public int RacioUtenteEnfermeiro { get; set; }
-        public int RacioUtenteTecnicodeDiagnostico { get; set; }
+        public int NumerototaldeProfissionaisdeSaudedestaUS
+        {
+            get
+            {
+                return Medicos +
+                    EnfermeirosTecnicosSuperiores +
+                    EnfermeirosTecnicosMedios +
+                    Parteiras +
+                    TecnicosdeDiagnostico +
+                    OutrosProfissionaisdeSaude;
+            }
+        }
         public string Observacoes { get; set; }
 
     }

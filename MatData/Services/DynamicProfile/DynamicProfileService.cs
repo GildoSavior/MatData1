@@ -1293,7 +1293,7 @@ namespace MatData.Services.DynamicProfile
                                     Year = model.Year,
                                     InstanceId = record.InstanceId,
                                     Data = JsonConvert.SerializeObject(Q39Mapper.Serialize(quiz.Data)),
-                                    Indicator = _db.Indicators.Find(40),
+                                    Indicator = _db.Indicators.Find(39),
                                     Province = _db.Provinces.FirstOrDefault(p => p.Name == props["q3901"]),
                                     Municipe = _db.Municipes.FirstOrDefault(p => p.Name == props["q3902"]),
                                     UrbanDistrictCommune = _db.UrbanDistrictCommunes.FirstOrDefault(p => p.Name == props["q3903"]),

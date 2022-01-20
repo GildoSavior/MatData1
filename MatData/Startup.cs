@@ -111,7 +111,7 @@ namespace MatData
                     .AllowCredentials()
                 );
 
-            app.UseHttpsRedirection();
+            //app.UseHttpsRedirection();
 
             app.UseStaticFiles();
 
