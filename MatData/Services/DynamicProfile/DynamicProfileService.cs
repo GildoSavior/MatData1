@@ -17,6 +17,8 @@ using static MatData.Serialization.Q35Mapper;
 using Matdata.API.ViewModels;
 using System.IO.Compression;
 using Matdata.API.Serialization;
+using Microsoft.Extensions.Logging;
+using MatData.Services.Municipe;
 
 namespace MatData.Services.DynamicProfile
 {
@@ -24,11 +26,15 @@ namespace MatData.Services.DynamicProfile
     {
         public static IWebHostEnvironment _environment;
         public readonly AppDbContext _db;
+        private readonly ILogger<DynamicProfileService> _logger;
+        private readonly IHistoryDataService _historyDataService;
 
-        public DynamicProfileService(IWebHostEnvironment environment, AppDbContext db)
+        public DynamicProfileService(ILogger<DynamicProfileService> logger, IWebHostEnvironment environment, AppDbContext db, IHistoryDataService historyDataService)
         {
             _db = db;
             _environment = environment;
+            _logger = logger;
+            _historyDataService = historyDataService;
         }
 
         public async Task<ServiceResponse<bool>> importData(ProfileVM model, IFormFile file)

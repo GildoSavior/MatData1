@@ -17,5 +17,6 @@ namespace MatData.Data
         public virtual DbSet<Theme> Themes { get; set; }
         public virtual DbSet<Indicator> Indicators { get; set; }
         public virtual DbSet<IndicatorResponse> IndicatorResponses { get; set; }
+        public virtual DbSet<HistoryData> HistoryDatas { get; set; }
     }
 }
