@@ -12,11 +12,13 @@ namespace Matdata.API.Serialization
 			{
 				Id = historyData.Id,
 				UserId = historyData.UserId,
-				ProvinceId = historyData.ProvinceId,
-				MunicipeId = historyData.MunicipeId,
+				ProvinceName = historyData.Province.Name,
+				MunicipeName = historyData.Municipe.Name,
+				ProvinceId = historyData.Province.Id,
+				MunicipeId = historyData.Municipe.Id,
 				FileName = historyData.FileName,
 				Year = historyData.Year,
-				CreatedOn = historyData.CreatedOn
+				CreatedOn = historyData.CreatedOn.ToString("MM/dd/yyyy HH:mm:ss")
 			};
 		}
 
@@ -30,7 +32,7 @@ namespace Matdata.API.Serialization
 				MunicipeId = historyData.MunicipeId,
 				FileName = historyData.FileName,
 				Year = historyData.Year,
-				CreatedOn = historyData.CreatedOn
+				CreatedOn = DateTime.Now
 			};
 		}
 	}

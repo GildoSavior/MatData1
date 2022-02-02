@@ -25,13 +25,13 @@ namespace MatData.Controllers
         public IActionResult GetAll()
         {
             _logger.LogInformation("Getting history data");
-            var municipes = _historyDataService.GetAllHistoryDatas();
+            var histories = _historyDataService.GetAllHistoryDatas();
 
-            var histories = municipes.Select(municipe => HistoryDataMapper.Serialize(municipe))
-                .OrderBy(municipe => municipe.Id)
+            var result = histories.Select(municipe => HistoryDataMapper.Serialize(municipe))
+                .OrderBy(history => -history.Id)
                 .ToList();
 
-            return Ok(histories);
+            return Ok(result);
         }
 
         [HttpPost]

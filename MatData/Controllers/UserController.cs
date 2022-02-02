@@ -24,7 +24,8 @@ namespace Matdata.API.Controllers
 		public IActionResult GetAll()
 		{
 			_logger.LogInformation("Getting users");
-			return Ok();
+			var users = _userService.GetUsers();
+			return Ok(users);
 		}
 
 		[HttpPost]

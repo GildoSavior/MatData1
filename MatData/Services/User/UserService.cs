@@ -1,7 +1,9 @@
 ﻿using Matdata.API.Serialization;
 using Matdata.API.ViewModels;
 using MatData.Data;
+using Microsoft.EntityFrameworkCore;
 using System;
+using System.Collections.Generic;
 using System.Linq;
 
 namespace MatData.Services.User
@@ -19,8 +21,20 @@ namespace MatData.Services.User
         {
             try
             {
+                var exist = _db.Users.FirstOrDefault(u => u.Username == user.Username);
+
+                if (exist != null)
+                {
+                    return new ServiceResponse<bool>
+                    {
+                        IsSuccess = false,
+                        Message = "User exits",
+                        Time = DateTime.Now,
+                        Data = false
+                    };
+                }
+
                 _db.Add(user);
-                _db.Users.Remove(user);
                 _db.SaveChanges();
                 return new ServiceResponse<bool>
                 {
@@ -42,11 +56,19 @@ namespace MatData.Services.User
             }
         }
 
-        public Models.User Get(string username, string password)
+        public Models.User Get(string email, string password)
         {
             return _db.Users
-                .Where(u => u.Username == username && u.Password == password)
+                .Where(u => u.Email == email && u.Password == password)
                 .FirstOrDefault();
+        }
+
+        public List<Models.User> GetUsers()
+        {
+            return _db.Users
+                .Include(u => u.Province)
+                .Include(u => u.Municipe)
+                .ToList();
         }
 
         public ServiceResponse<bool> Update(UserModel user, int id)

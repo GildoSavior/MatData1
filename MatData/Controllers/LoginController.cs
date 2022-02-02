@@ -1,4 +1,5 @@
-﻿using MatData.Models;
+﻿using Matdata.API.ViewModels;
+using MatData.Models;
 using MatData.Services.Token;
 using MatData.Services.User;
 using Microsoft.AspNetCore.Mvc;
@@ -20,9 +21,9 @@ namespace MatData.Controllers
 
         [HttpPost]
         [Route("login")]
-        public ActionResult<dynamic> Authenticate([FromBody] User model)
+        public ActionResult<dynamic> Authenticate([FromBody] UserLoginVM model)
         {
-            var user =  _userService.Get(model.Username, model.Password);
+            var user =  _userService.Get(model.Email, model.Password);
 
             if (user == null)
                 return NotFound(new { message = "Usuário ou senhas inválidos" });

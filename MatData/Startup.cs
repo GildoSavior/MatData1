@@ -92,6 +92,7 @@ namespace MatData
             services.AddTransient<IUserService, UserService>();
             services.AddTransient<IDynamicProfileService, DynamicProfileService>();
             services.AddTransient<IHistoryDataService, HistoryDataService>();
+
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

@@ -85,6 +85,7 @@ namespace MatData.Services.Municipe
         {
             return _db.HistoryDatas
                 .Include(historyData => historyData.Province)
+                .Include(historyData => historyData.Municipe)
                 .OrderBy(historyData => historyData.Year)
                 .ToList();
         }
