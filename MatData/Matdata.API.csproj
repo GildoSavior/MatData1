@@ -30,6 +30,9 @@
     <Folder Include="wwwroot\" />
     <Folder Include="Extensions\" />
     <Folder Include="Services\HistoryData\" />
+    <Folder Include="Services\Comment\" />
+    <Folder Include="Services\Agenda\" />
+    <Folder Include="Services\Message\" />
   </ItemGroup>
 
   <ItemGroup>
@@ -37,5 +40,8 @@
     <None Remove="Extensions\" />
     <None Remove="Services\Municipe\Municipe\" />
     <None Remove="Services\HistoryData\" />
+    <None Remove="Services\Comment\" />
+    <None Remove="Services\Agendas\" />
+    <None Remove="Services\Message\" />
   </ItemGroup>
 </Project>

@@ -1,4 +1,5 @@
-﻿using MatData.Models;
+﻿using Matdata.API.Models;
+using MatData.Models;
 using Microsoft.EntityFrameworkCore;
 
 namespace MatData.Data
@@ -18,5 +19,8 @@ namespace MatData.Data
         public virtual DbSet<Indicator> Indicators { get; set; }
         public virtual DbSet<IndicatorResponse> IndicatorResponses { get; set; }
         public virtual DbSet<HistoryData> HistoryDatas { get; set; }
+        public virtual DbSet<Comment> Comments { get; set; }
+        public virtual DbSet<Agenda> Agendas { get; set; }
+        public virtual DbSet<Message> Messages { get; set; }
     }
 }
