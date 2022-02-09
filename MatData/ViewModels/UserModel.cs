@@ -10,8 +10,8 @@ namespace Matdata.API.ViewModels
         public string Password { get; set; }
         public string PasswordConfirm { get; set; }
         public string PhoneNumber { get; set; }
-        public int Province { get; set; }
-        public int Municipe { get; set; }
+        public int ProvinceId { get; set; }
+        public int MunicipeId { get; set; }
         public string UserType { get; set; }
         public string Role { get; set; }
     }
