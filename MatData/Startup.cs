@@ -1,6 +1,7 @@
 using Matdata.API.Services.Agenda;
 using Matdata.API.Services.Comment;
 using Matdata.API.Services.Message;
+using Matdata.API.Services.Posts;
 using MatData.Data;
 using MatData.Services.Category;
 using MatData.Services.DynamicProfile;
@@ -97,7 +98,7 @@ namespace MatData
             services.AddTransient<IHistoryDataService, HistoryDataService>();
             services.AddTransient<IAgendaService, AgendaService>();
             services.AddTransient<ICommentService, CommentService>();
-            services.AddTransient<IMessageService, MessageService>();
+            services.AddTransient<IPostService, PostService>();
 
         }
 
