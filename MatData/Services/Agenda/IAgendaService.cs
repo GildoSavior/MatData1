@@ -1,5 +1,6 @@
 ﻿using System.Collections.Generic;
 using MatData;
+using Microsoft.AspNetCore.Http;
 
 namespace Matdata.API.Services.Agenda
 {
@@ -8,7 +9,7 @@ namespace Matdata.API.Services.Agenda
 		List<Models.Agenda> GetAgendas();
 		Models.Agenda GetAgendaById(int id);
 		ServiceResponse<bool> DeleteAgenda(int id);
-		ServiceResponse<bool> CreateAgenda(Models.Agenda agenda);
+		ServiceResponse<bool> CreateAgenda(Models.Agenda agenda, IFormFile file);
 	}
 }
 

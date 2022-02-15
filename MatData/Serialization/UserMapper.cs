@@ -15,8 +15,8 @@ namespace Matdata.API.Serialization
 			userToSave.Password = user.Password;
 			userToSave.PasswordConfirm = user.PasswordConfirm;
 			userToSave.PhoneNumber = user.PhoneNumber;
-			userToSave.ProvinceId = user.Province;
-			userToSave.MunicipeId = user.Municipe;
+			userToSave.ProvinceId = user.ProvinceId;
+			userToSave.MunicipeId = user.MunicipeId;
 			userToSave.UserType = user.UserType;
 			userToSave.Role = user.Role;
 		}
@@ -32,8 +32,8 @@ namespace Matdata.API.Serialization
 				Password = user.Password,
 				PasswordConfirm = user.PasswordConfirm,
 				PhoneNumber = user.PhoneNumber,
-				ProvinceId = user.Province,
-				MunicipeId = user.Municipe,
+				ProvinceId = user.ProvinceId,
+				MunicipeId = user.MunicipeId,
 				UserType = user.UserType,
 				Role = user.Role
 			};

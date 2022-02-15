@@ -1,0 +1,574 @@
+Name,ComuneName,LabelName,ProvinceName,MunicipeName
+comunas,Barra do Dande,Barra do Dande,Bengo,Dande
+comunas,Caxito,Caxito,Bengo,Dande
+comunas,Mabubas,Mabubas,Bengo,Dande
+comunas,Quicabo,Quicabo,Bengo,Dande
+comunas,Úcua,Úcua,Bengo,Dande
+comunas,Quibaxe,Quibaxe,Bengo,Dembos
+comunas,Piri,Piri,Bengo,Dembos
+comunas,Paredes,Paredes,Bengo,Dembos
+comunas,Coxe,Coxe,Bengo,Dembos
+comunas,Canacassala,Canacassala,Bengo,Nambuangongo
+comunas,Quicunzo,Quicunzo,Bengo,Nambuangongo
+comunas,Muxaluando,Muxaluando,Bengo,Nambuangongo
+comunas,Quixico,Quixico,Bengo,Nambuangongo
+comunas,Gombe,Gombe,Bengo,Nambuangongo
+comunas,Cage,Cage,Bengo,Nambuangongo
+comunas,Zala,Zala,Bengo,Nambuangongo
+comunas,Bula Atumba,Bula Atumba,Bengo,Bula Atumba
+comunas,Quiage,Quiage,Bengo,Bula Atumba
+comunas,Bela Vista,Bela Vista,Bengo,Ambriz
+comunas,Ambriz,Ambriz,Bengo,Ambriz
+comunas,Tabi,Tabi,Bengo,Ambriz
+comunas,Pango Aluquém,Pango Aluquém,Bengo,Pango Aluquém
+comunas,Cazuangongo,Cazuangongo,Bengo,Pango Aluquém
+comunas,Benguela - S/Comuna/Distrito,Benguela - S/Comuna/Distrito,Benguela,Benguela
+comunas,Ganda,Ganda,Benguela,Ganda
+comunas,Ebanga,Ebanga,Benguela,Ganda
+comunas,Chicuma,Chicuma,Benguela,Ganda
+comunas,Babaera,Babaera,Benguela,Ganda
+comunas,Casseque,Casseque,Benguela,Ganda
+comunas,Egito Praia,Egito Praia,Benguela,Lobito
+comunas,Lobito,Lobito,Benguela,Lobito
+comunas,Canata,Canata,Benguela,Lobito
+comunas,Canjala,Canjala,Benguela,Lobito
+comunas,Catumbela,Catumbela,Benguela,Catumbela
+comunas,Biópio,Biópio,Benguela,Catumbela
+comunas,Gama,Gama,Benguela,Catumbela
+comunas,Praia Bebé,Praia Bebé,Benguela,Catumbela
+comunas,Bocoio,Bocoio,Benguela,Bocoio
+comunas,Cubal do Lumbo,Cubal do Lumbo,Benguela,Bocoio
+comunas,Monte Belo,Monte Belo,Benguela,Bocoio
+comunas,Chila,Chila,Benguela,Bocoio
+comunas,Passe,Passe,Benguela,Bocoio
+comunas,Balombo,Balombo,Benguela,Balombo
+comunas,Chingongo,Chingongo,Benguela,Balombo
+comunas,Chindumbo,Chindumbo,Benguela,Balombo
+comunas,Maca Mombolo,Maca Mombolo,Benguela,Balombo
+comunas,Capupa,Capupa,Benguela,Cubal
+comunas,Cubal,Cubal,Benguela,Cubal
+comunas,Tumbulo,Tumbulo,Benguela,Cubal
+comunas,Iambala,Iambala,Benguela,Cubal
+comunas,Dombe Grande,Dombe Grande,Benguela,Baía Farta
+comunas,Baía Farta,Baía Farta,Benguela,Baía Farta
+comunas,Calohanga,Calohanga,Benguela,Baía Farta
+comunas,Equimina,Equimina,Benguela,Baía Farta
+comunas,Caimbambo,Caimbambo,Benguela,Caimbambo
+comunas,Catengue,Catengue,Benguela,Caimbambo
+comunas,Caiave,Caiave,Benguela,Caimbambo
+comunas,Canhamela,Canhamela,Benguela,Caimbambo
+comunas,Viangombe,Viangombe,Benguela,Caimbambo
+comunas,Chongoroi,Chongoroi,Benguela,Chongorói
+comunas,Bolonguera,Bolonguera,Benguela,Chongorói
+comunas,Camuine,Camuine,Benguela,Chongorói
+comunas,Andulo,Andulo,Bié,Andulo
+comunas,Calucinga,Calucinga,Bié,Andulo
+comunas,Cassumbe,Cassumbe,Bié,Andulo
+comunas,Chivaúlo,Chivaúlo,Bié,Andulo
+comunas,Cachingues,Cachingues,Bié,Chitembo
+comunas,Chitembo,Chitembo,Bié,Chitembo
+comunas,Mutumbo,Mutumbo,Bié,Chitembo
+comunas,Mumbué,Mumbué,Bié,Chitembo
+comunas,Malengue,Malengue,Bié,Chitembo
+comunas,Soma Cuanza,Soma Cuanza,Bié,Chitembo
+comunas,Cuito,Cuito,Bié,Cuito
+comunas,Chicala,Chicala,Bié,Cuito
+comunas,Cunje,Cunje,Bié,Cuito
+comunas,Trumba,Trumba,Bié,Cuito
+comunas,Cambândua,Cambândua,Bié,Cuito
+comunas,Ringoma,Ringoma,Bié,Camacupa
+comunas,Camacupa,Camacupa,Bié,Camacupa
+comunas,Muinha,Muinha,Bié,Camacupa
+comunas,Umpulo,Umpulo,Bié,Camacupa
+comunas,Cuanza,Cuanza,Bié,Camacupa
+comunas,Chinguar,Chinguar,Bié,Chinguar
+comunas,Cutato,Cutato,Bié,Chinguar
+comunas,Cangote,Cangote,Bié,Chinguar
+comunas,Catabola,Catabola,Bié,Catabola
+comunas,Chipeta,Chipeta,Bié,Catabola
+comunas,Caiuera,Caiuera,Bié,Catabola
+comunas,Chiuca,Chiuca,Bié,Catabola
+comunas,Sande,Sande,Bié,Catabola
+comunas,Cunhinga,Cunhinga,Bié,Cunhinga
+comunas,Belo Horizonte,Belo Horizonte,Bié,Cunhinga
+comunas,Luando,Luando,Bié,Cuemba
+comunas,Munhango,Munhango,Bié,Cuemba
+comunas,Cuemba,Cuemba,Bié,Cuemba
+comunas,Sachinemuna,Sachinemuna,Bié,Cuemba
+comunas,Nharêa,Nharêa,Bié,Nharêa
+comunas,Gamba,Gamba,Bié,Nharêa
+comunas,Lúbia,Lúbia,Bié,Nharêa
+comunas,Caiei,Caiei,Bié,Nharêa
+comunas,Dando,Dando,Bié,Nharêa
+comunas,Cabinda,Cabinda,Cabinda,Cabinda
+comunas,Malembo,Malembo,Cabinda,Cabinda
+comunas,Tando Zinze,Tando Zinze,Cabinda,Cabinda
+comunas,Cacongo,Cacongo,Cabinda,Cacongo
+comunas,Dinge,Dinge,Cabinda,Cacongo
+comunas,Massabi,Massabi,Cabinda,Cacongo
+comunas,Buco Zau,Buco Zau,Cabinda,Buco Zau
+comunas,Necuto,Necuto,Cabinda,Buco Zau
+comunas,Inhuca,Inhuca,Cabinda,Buco Zau
+comunas,Miconje,Miconje,Cabinda,Belize
+comunas,Belize,Belize,Cabinda,Belize
+comunas,Luali,Luali,Cabinda,Belize
+comunas,Caiundo,Caiundo,Cuando Cubango,Menongue
+comunas,Menongue,Menongue,Cuando Cubango,Menongue
+comunas,Cueio,Cueio,Cuando Cubango,Menongue
+comunas,Missombo,Missombo,Cuando Cubango,Menongue
+comunas,Mavinga,Mavinga,Cuando Cubango,Mavinga
+comunas,Cutuile,Cutuile,Cuando Cubango,Mavinga
+comunas,Cunjamba,Cunjamba,Cuando Cubango,Mavinga
+comunas,Luengue,Luengue,Cuando Cubango,Mavinga
+comunas,Dirico,Dirico,Cuando Cubango,Dirico
+comunas,Mucusso,Mucusso,Cuando Cubango,Dirico
+comunas,Xamavera,Xamavera,Cuando Cubango,Dirico
+comunas,Lupire,Lupire,Cuando Cubango,Cuito Cuanavale
+comunas,Cuito Cuanavale,Cuito Cuanavale,Cuando Cubango,Cuito Cuanavale
+comunas,Longa,Longa,Cuando Cubango,Cuito Cuanavale
+comunas,Baixo Longa,Baixo Longa,Cuando Cubango,Cuito Cuanavale
+comunas,Cuchi,Cuchi,Cuando Cubango,Cuchi
+comunas,Cutato,Cutato,Cuando Cubango,Cuchi
+comunas,Chinguanja,Chinguanja,Cuando Cubango,Cuchi
+comunas,Vissati,Vissati,Cuando Cubango,Cuchi
+comunas,Rivungo,Rivungo,Cuando Cubango,Rivungo
+comunas,Xipundo,Xipundo,Cuando Cubango,Rivungo
+comunas,Luiana,Luiana,Cuando Cubango,Rivungo
+comunas,Maué,Maué,Cuando Cubango,Calai
+comunas,Calai,Calai,Cuando Cubango,Calai
+comunas,Mavengue,Mavengue,Cuando Cubango,Calai
+comunas,Savate,Savate,Cuando Cubango,Cuangar
+comunas,Caíla,Caíla,Cuando Cubango,Cuangar
+comunas,Cuangar,Cuangar,Cuando Cubango,Cuangar
+comunas,Rito,Rito,Cuando Cubango,Nancova
+comunas,Nancova,Nancova,Cuando Cubango,Nancova
+comunas,Ndalatando,Ndalatando,Cuanza-Norte,Cazengo
+comunas,Canhoca,Canhoca,Cuanza-Norte,Cazengo
+comunas,Golungo Alto,Golungo Alto,Cuanza-Norte,Golungo Alto
+comunas,Cambondo,Cambondo,Cuanza-Norte,Golungo Alto
+comunas,Cêrca,Cêrca,Cuanza-Norte,Golungo Alto
+comunas,Quiluanje,Quiluanje,Cuanza-Norte,Golungo Alto
+comunas,Dondo,Dondo,Cuanza-Norte,Cambambe
+comunas,Massangano,Massangano,Cuanza-Norte,Cambambe
+comunas,Dange ya Menha,Dange ya Menha,Cuanza-Norte,Cambambe
+comunas,Zenza do Itombe,Zenza do Itombe,Cuanza-Norte,Cambambe
+comunas,São Pedro da Quilemba,São Pedro da Quilemba,Cuanza-Norte,Cambambe
+comunas,Samba Cajú,Samba Cajú,Cuanza-Norte,Samba Cajú
+comunas,Samba Lucala,Samba Lucala,Cuanza-Norte,Samba Cajú
+comunas,Camabatela,Camabatela,Cuanza-Norte,Ambaca
+comunas,Tango,Tango,Cuanza-Norte,Ambaca
+comunas,Máua,Máua,Cuanza-Norte,Ambaca
+comunas,Bindo,Bindo,Cuanza-Norte,Ambaca
+comunas,Luínga,Luínga,Cuanza-Norte,Ambaca
+comunas,Lucala,Lucala,Cuanza-Norte,Lucala
+comunas,Quiangombe,Quiangombe,Cuanza-Norte,Lucala
+comunas,Banga,Banga,Cuanza-Norte,Banga
+comunas,Caculo Cabaça,Caculo Cabaça,Cuanza-Norte,Banga
+comunas,Aldeia Nova,Aldeia Nova,Cuanza-Norte,Banga
+comunas,Cariamba,Cariamba,Cuanza-Norte,Banga
+comunas,Bolongongo,Bolongongo,Cuanza-Norte,Bolongongo
+comunas,Terreiro,Terreiro,Cuanza-Norte,Bolongongo
+comunas,Quiquiemba,Quiquiemba,Cuanza-Norte,Bolongongo
+comunas,Quiculungo - S/Comuna/Distrito,Quiculungo - S/Comuna/Distrito,Cuanza-Norte,Quiculungo
+comunas,Quilombo dos Dembos,Quilombo dos Dembos,Cuanza-Norte,Ngonguembo
+comunas,Camame,Camame,Cuanza-Norte,Ngonguembo
+comunas,Cavunga,Cavunga,Cuanza-Norte,Ngonguembo
+comunas,Sumbe,Sumbe,Cuanza-Sul,Sumbe
+comunas,Gungo,Gungo,Cuanza-Sul,Sumbe
+comunas,Gangula,Gangula,Cuanza-Sul,Sumbe
+comunas,Quicombo,Quicombo,Cuanza-Sul,Sumbe
+comunas,Calulo,Calulo,Cuanza-Sul,Libolo
+comunas,Munenga,Munenga,Cuanza-Sul,Libolo
+comunas,Cabuta,Cabuta,Cuanza-Sul,Libolo
+comunas,Quissongo,Quissongo,Cuanza-Sul,Libolo
+comunas,Gabela,Gabela,Cuanza-Sul,Amboim
+comunas,Assango,Assango,Cuanza-Sul,Amboim
+comunas,Cassongue,Cassongue,Cuanza-Sul,Cassongue
+comunas,Pambangala,Pambangala,Cuanza-Sul,Cassongue
+comunas,Dumbi,Dumbi,Cuanza-Sul,Cassongue
+comunas,Atóme,Atóme,Cuanza-Sul,Cassongue
+comunas,Capolo,Capolo,Cuanza-Sul,Porto Amboim
+comunas,Porto Amboim,Porto Amboim,Cuanza-Sul,Porto Amboim
+comunas,Quibala,Quibala,Cuanza-Sul,Quibala
+comunas,Dala Cachibo,Dala Cachibo,Cuanza-Sul,Quibala
+comunas,Cariango,Cariango,Cuanza-Sul,Quibala
+comunas,Lonhe,Lonhe,Cuanza-Sul,Quibala
+comunas,Seles,Seles,Cuanza-Sul,Seles
+comunas,Amboiva,Amboiva,Cuanza-Sul,Seles
+comunas,Botera,Botera,Cuanza-Sul,Seles
+comunas,Sanga,Sanga,Cuanza-Sul,Cela
+comunas,Waku Kungo,Waku Kungo,Cuanza-Sul,Cela
+comunas,Quissanga Cunjo,Quissanga Cunjo,Cuanza-Sul,Cela
+comunas,Mussende,Mussende,Cuanza-Sul,Mussende
+comunas,Quienha,Quienha,Cuanza-Sul,Mussende
+comunas,São Lucas,São Lucas,Cuanza-Sul,Mussende
+comunas,Quilenda,Quilenda,Cuanza-Sul,Quilenda
+comunas,Quirimbo,Quirimbo,Cuanza-Sul,Quilenda
+comunas,Ebo,Ebo,Cuanza-Sul,Ebo
+comunas,Condé,Condé,Cuanza-Sul,Ebo
+comunas,Quissanje,Quissanje,Cuanza-Sul,Ebo
+comunas,Conda,Conda,Cuanza-Sul,Conda
+comunas,Cunjo,Cunjo,Cuanza-Sul,Conda
+comunas,Humbe,Humbe,Cunene,Ombadja
+comunas,Mucope,Mucope,Cunene,Ombadja
+comunas,Naulila,Naulila,Cunene,Ombadja
+comunas,Ombala yo Mungu,Ombala yo Mungu,Cunene,Ombadja
+comunas,Xangongo,Xangongo,Cunene,Ombadja
+comunas,Ondjiva,Ondjiva,Cunene,Cuanhama
+comunas,Nehone Cafima,Nehone Cafima,Cunene,Cuanhama
+comunas,Evale,Evale,Cunene,Cuanhama
+comunas,Tchomporo Oximolo,Tchomporo Oximolo,Cunene,Cuanhama
+comunas,Môngwa,Môngwa,Cunene,Cuanhama
+comunas,Oncócua,Oncócua,Cunene,Curoca
+comunas,Chitado,Chitado,Cunene,Curoca
+comunas,Cahama,Cahama,Cunene,Cahama
+comunas,Otchinjau,Otchinjau,Cunene,Cahama
+comunas,Mupa,Mupa,Cunene,Cuvelai
+comunas,Mukolongodjo,Mukolongodjo,Cunene,Cuvelai
+comunas,Cubati,Cubati,Cunene,Cuvelai
+comunas,Calonga,Calonga,Cunene,Cuvelai
+comunas,Namacunde,Namacunde,Cunene,Namacunde
+comunas,Chiede,Chiede,Cunene,Namacunde
+comunas,Bimbe,Bimbe,Huambo,Bailundo
+comunas,Bailundo,Bailundo,Huambo,Bailundo
+comunas,Lunge,Lunge,Huambo,Bailundo
+comunas,Luvemba,Luvemba,Huambo,Bailundo
+comunas,Hengue,Hengue,Huambo,Bailundo
+comunas,Huambo,Huambo,Huambo,Huambo
+comunas,Calima,Calima,Huambo,Huambo
+comunas,Chipipa,Chipipa,Huambo,Huambo
+comunas,Londuimbali,Londuimbali,Huambo,Londuimbali
+comunas,Cumbira,Cumbira,Huambo,Londuimbali
+comunas,Galanga,Galanga,Huambo,Londuimbali
+comunas,Ussoque,Ussoque,Huambo,Londuimbali
+comunas,Alto Hama,Alto Hama,Huambo,Londuimbali
+comunas,Caála,Caála,Huambo,Caála
+comunas,Catata,Catata,Huambo,Caála
+comunas,Calenga,Calenga,Huambo,Caála
+comunas,Cuima,Cuima,Huambo,Caála
+comunas,Sambo,Sambo,Huambo,Chicala-Choloanga
+comunas,Mbave,Mbave,Huambo,Chicala-Choloanga
+comunas,Chicala,Chicala,Huambo,Chicala-Choloanga
+comunas,Samboto,Samboto,Huambo,Chicala-Choloanga
+comunas,Chiumbo,Chiumbo,Huambo,Cachiungo
+comunas,Chinhama,Chinhama,Huambo,Cachiungo
+comunas,Cachiungo,Cachiungo,Huambo,Cachiungo
+comunas,Mungo,Mungo,Huambo,Mungo
+comunas,Cambuengo,Cambuengo,Huambo,Mungo
+comunas,Lépi,Lépi,Huambo,Longonjo
+comunas,Iava,Iava,Huambo,Longonjo
+comunas,Chilata,Chilata,Huambo,Longonjo
+comunas,Longonjo,Longonjo,Huambo,Longonjo
+comunas,Ucuma,Ucuma,Huambo,Ucuma
+comunas,Cacoma,Cacoma,Huambo,Ucuma
+comunas,Mundundo,Mundundo,Huambo,Ucuma
+comunas,Quipeio,Quipeio,Huambo,Ecunha
+comunas,Ecunha,Ecunha,Huambo,Ecunha
+comunas,Chinjenje,Chinjenje,Huambo,Chinjenje
+comunas,Chiaca,Chiaca,Huambo,Chinjenje
+comunas,Caconda,Caconda,Huíla,Caconda
+comunas,Gungue,Gungue,Huíla,Caconda
+comunas,Uaba,Uaba,Huíla,Caconda
+comunas,Cusse,Cusse,Huíla,Caconda
+comunas,Chimbemba,Chimbemba,Huíla,Gambos
+comunas,Chiange,Chiange,Huíla,Gambos
+comunas,Humpata - S/Comuna/Distrito,Humpata - S/Comuna/Distrito,Huíla,Humpata
+comunas,Lubango,Lubango,Huíla,Lubango
+comunas,Hoque,Hoque,Huíla,Lubango
+comunas,Arimba,Arimba,Huíla,Lubango
+comunas,Huíla,Huíla,Huíla,Lubango
+comunas,Cuvango,Cuvango,Huíla,Cuvango
+comunas,Galangue,Galangue,Huíla,Cuvango
+comunas,Vicungo,Vicungo,Huíla,Cuvango
+comunas,Quipungo - S/Comuna/Distrito,Quipungo - S/Comuna/Distrito,Huíla,Quipungo
+comunas,Chibia,Chibia,Huíla,Chibia
+comunas,Jau,Jau,Huíla,Chibia
+comunas,Capunda Cavilongo,Capunda Cavilongo,Huíla,Chibia
+comunas,Quihita,Quihita,Huíla,Chibia
+comunas,Quilengues,Quilengues,Huíla,Quilengues
+comunas,Impulo,Impulo,Huíla,Quilengues
+comunas,Dinde,Dinde,Huíla,Quilengues
+comunas,Caluquembe,Caluquembe,Huíla,Caluquembe
+comunas,Ngola,Ngola,Huíla,Caluquembe
+comunas,Calepi,Calepi,Huíla,Caluquembe
+comunas,Capelongo,Capelongo,Huíla,Matala
+comunas,Matala,Matala,Huíla,Matala
+comunas,Mulondo,Mulondo,Huíla,Matala
+comunas,Dongo,Dongo,Huíla,Jamba
+comunas,Cassinga,Cassinga,Huíla,Jamba
+comunas,Jamba,Jamba,Huíla,Jamba
+comunas,Bambi,Bambi,Huíla,Chipindo
+comunas,Chipindo,Chipindo,Huíla,Chipindo
+comunas,Chicomba,Chicomba,Huíla,Chicomba
+comunas,Cutenda,Cutenda,Huíla,Chicomba
+comunas,Chituto,Chituto,Huíla,Cacula
+comunas,Viti Vivali,Viti Vivali,Huíla,Cacula
+comunas,Cacula,Cacula,Huíla,Cacula
+comunas,Tchicuaqueia,Tchicuaqueia,Huíla,Cacula
+comunas,Sambizanga,Sambizanga,Luanda,Luanda
+comunas,Rangel,Rangel,Luanda,Luanda
+comunas,Maianga,Maianga,Luanda,Luanda
+comunas,Ingombota,Ingombota,Luanda,Luanda
+comunas,Samba,Samba,Luanda,Luanda
+comunas,Neves Bendinha,Neves Bendinha,Luanda,Luanda
+comunas,Ngola Kiluanje,Ngola Kiluanje,Luanda,Luanda
+comunas,Cassoneca,Cassoneca,Luanda,Icolo e Bengo
+comunas,Cabiri,Cabiri,Luanda,Icolo e Bengo
+comunas,Bom Jesus,Bom Jesus,Luanda,Icolo e Bengo
+comunas,Caculo Cahango,Caculo Cahango,Luanda,Icolo e Bengo
+comunas,Quiminha,Quiminha,Luanda,Icolo e Bengo
+comunas,Catete,Catete,Luanda,Icolo e Bengo
+comunas,Bela Vista,Bela Vista,Luanda,Icolo e Bengo
+comunas,Muxima,Muxima,Luanda,Quiçama
+comunas,Demba Chio,Demba Chio,Luanda,Quiçama
+comunas,Quixinge,Quixinge,Luanda,Quiçama
+comunas,Mumbondo,Mumbondo,Luanda,Quiçama
+comunas,Cabo Ledo,Cabo Ledo,Luanda,Quiçama
+comunas,Funda,Funda,Luanda,Cacuaco
+comunas,Kikolo,Kikolo,Luanda,Cacuaco
+comunas,Cacuaco,Cacuaco,Luanda,Cacuaco
+comunas,Mulenvos de Baixo,Mulenvos de Baixo,Luanda,Cacuaco
+comunas,Sequele,Sequele,Luanda,Cacuaco
+comunas,Cazenga,Cazenga,Luanda,Cazenga
+comunas,Hoji ya Henda,Hoji ya Henda,Luanda,Cazenga
+comunas,11 de novembro,11 de novembro,Luanda,Cazenga
+comunas,Kima Kieza,Kima Kieza,Luanda,Cazenga
+comunas,Tala Hadi,Tala Hadi,Luanda,Cazenga
+comunas,Kalawenda,Kalawenda,Luanda,Cazenga
+comunas,Calumbo,Calumbo,Luanda,Viana
+comunas,Viana,Viana,Luanda,Viana
+comunas,Estalagem,Estalagem,Luanda,Viana
+comunas,Kikuxi,Kikuxi,Luanda,Viana
+comunas,Baia,Baia,Luanda,Viana
+comunas,Zango,Zango,Luanda,Viana
+comunas,Vila Flor,Vila Flor,Luanda,Viana
+comunas,Barra do Cuanza,Barra do Cuanza,Luanda,Belas
+comunas,Quenguela,Quenguela,Luanda,Belas
+comunas,Morro dos Veados,Morro dos Veados,Luanda,Belas
+comunas,Ramiros,Ramiros,Luanda,Belas
+comunas,Vila Verde,Vila Verde,Luanda,Belas
+comunas,Cabolombo,Cabolombo,Luanda,Belas
+comunas,Kilamba,Kilamba,Luanda,Belas
+comunas,Golfe,Golfe,Luanda,Kilamba Kiaxi
+comunas,Sapú,Sapú,Luanda,Kilamba Kiaxi
+comunas,Palanca,Palanca,Luanda,Kilamba Kiaxi
+comunas,Nova Vida,Nova Vida,Luanda,Kilamba Kiaxi
+comunas,Mussulo,Mussulo,Luanda,Talatona
+comunas,Benfica,Benfica,Luanda,Talatona
+comunas,Futungo de Belas,Futungo de Belas,Luanda,Talatona
+comunas,Lar do Patriota,Lar do Patriota,Luanda,Talatona
+comunas,Talatona,Talatona,Luanda,Talatona
+comunas,Camama,Camama,Luanda,Talatona
+comunas,Cidade Universitária,Cidade Universitária,Luanda,Talatona
+comunas,Cuilo,Cuilo,Lunda-Norte,Cuilo
+comunas,Caluango,Caluango,Lunda-Norte,Cuilo
+comunas,Camaxilo,Camaxilo,Lunda-Norte,Caungula
+comunas,Caungula,Caungula,Lunda-Norte,Caungula
+comunas,Chitato,Chitato,Lunda-Norte,Chitato
+comunas,Luachimo,Luachimo,Lunda-Norte,Chitato
+comunas,Chitato DU,Chitato DU,Lunda-Norte,Chitato
+comunas,Dundo,Dundo,Lunda-Norte,Chitato
+comunas,Mussungue,Mussungue,Lunda-Norte,Chitato
+comunas,Lubalo,Lubalo,Lunda-Norte,Lubalo
+comunas,Luangue,Luangue,Lunda-Norte,Lubalo
+comunas,Muvuluege,Muvuluege,Lunda-Norte,Lubalo
+comunas,Capenda Camulemba,Capenda Camulemba,Lunda-Norte,Capenda Camulemba
+comunas,Xinge,Xinge,Lunda-Norte,Capenda Camulemba
+comunas,Cuango,Cuango,Lunda-Norte,Cuango
+comunas,Luremo,Luremo,Lunda-Norte,Cuango
+comunas,Lucapa,Lucapa,Lunda-Norte,Lucapa
+comunas,Capaia,Capaia,Lunda-Norte,Lucapa
+comunas,Camissombo,Camissombo,Lunda-Norte,Lucapa
+comunas,Xá Cassau,Xá Cassau,Lunda-Norte,Lucapa
+comunas,Luia,Luia,Lunda-Norte,Cambulo
+comunas,Cachimo,Cachimo,Lunda-Norte,Cambulo
+comunas,Canzar,Canzar,Lunda-Norte,Cambulo
+comunas,Cambulo,Cambulo,Lunda-Norte,Cambulo
+comunas,Xá-Muteba,Xá-Muteba,Lunda-Norte,Xá-Muteba
+comunas,Iongo,Iongo,Lunda-Norte,Xá-Muteba
+comunas,Cassanje Calucala,Cassanje Calucala,Lunda-Norte,Xá-Muteba
+comunas,Lóvua - S/Comuna/Distrito,Lóvua - S/Comuna/Distrito,Lunda-Norte,Lóvua
+comunas,Saurimo,Saurimo,Lunda-Sul,Saurimo
+comunas,Mona Quimbundo,Mona Quimbundo,Lunda-Sul,Saurimo
+comunas,Sombo,Sombo,Lunda-Sul,Saurimo
+comunas,Chiluage,Chiluage,Lunda-Sul,Muconda
+comunas,Cassai,Cassai,Lunda-Sul,Muconda
+comunas,Muriege,Muriege,Lunda-Sul,Muconda
+comunas,Muconda,Muconda,Lunda-Sul,Muconda
+comunas,Xassengue,Xassengue,Lunda-Sul,Cacolo
+comunas,Cucumbi,Cucumbi,Lunda-Sul,Cacolo
+comunas,Alto Chicapa,Alto Chicapa,Lunda-Sul,Cacolo
+comunas,Cacolo,Cacolo,Lunda-Sul,Cacolo
+comunas,Dala,Dala,Lunda-Sul,Dala
+comunas,Luma Cassai,Luma Cassai,Lunda-Sul,Dala
+comunas,Cazage,Cazage,Lunda-Sul,Dala
+comunas,Calandula,Calandula,Malanje,Calandula
+comunas,Cateco Cangola,Cateco Cangola,Malanje,Calandula
+comunas,Cota,Cota,Malanje,Calandula
+comunas,Cuale,Cuale,Malanje,Calandula
+comunas,Quinje,Quinje,Malanje,Calandula
+comunas,Malanje,Malanje,Malanje,Malanje
+comunas,Ngola Luiji,Ngola Luiji,Malanje,Malanje
+comunas,Cambaxe,Cambaxe,Malanje,Malanje
+comunas,Cacuso,Cacuso,Malanje,Cacuso
+comunas,Lombe,Lombe,Malanje,Cacuso
+comunas,Quizenga,Quizenga,Malanje,Cacuso
+comunas,Pungu a Ndongo,Pungu a Ndongo,Malanje,Cacuso
+comunas,Soqueco,Soqueco,Malanje,Cacuso
+comunas,Massango,Massango,Malanje,Massango
+comunas,Quihuhu,Quihuhu,Malanje,Massango
+comunas,Quinguengue,Quinguengue,Malanje,Massango
+comunas,Marimba,Marimba,Malanje,Marimba
+comunas,Cabombo,Cabombo,Malanje,Marimba
+comunas,Tembo Aluma,Tembo Aluma,Malanje,Marimba
+comunas,Quela,Quela,Malanje,Quela
+comunas,Xandel,Xandel,Malanje,Quela
+comunas,Moma,Moma,Malanje,Quela
+comunas,Bângalas,Bângalas,Malanje,Quela
+comunas,Sautar,Sautar,Malanje,Quirima
+comunas,Quirima,Quirima,Malanje,Quirima
+comunas,Cangandala,Cangandala,Malanje,Cangandala
+comunas,Bembo,Bembo,Malanje,Cangandala
+comunas,Culamagia,Culamagia,Malanje,Cangandala
+comunas,Caribo,Caribo,Malanje,Cangandala
+comunas,Mbanji ya Ngola,Mbanji ya Ngola,Malanje,Cahombo
+comunas,Cahombo,Cahombo,Malanje,Cahombo
+comunas,Cambo Suinginge,Cambo Suinginge,Malanje,Cahombo
+comunas,Micanda,Micanda,Malanje,Cahombo
+comunas,Kunda dya Baze,Kunda dya Baze,Malanje,Kunda dya Baze
+comunas,Milando,Milando,Malanje,Kunda dya Baze
+comunas,Lemba,Lemba,Malanje,Kunda dya Baze
+comunas,Talamungongo,Talamungongo,Malanje,Cambundi Catembo
+comunas,Cambundi Catembo,Cambundi Catembo,Malanje,Cambundi Catembo
+comunas,Quitapa,Quitapa,Malanje,Cambundi Catembo
+comunas,Dumba Cambango,Dumba Cambango,Malanje,Cambundi Catembo
+comunas,Catala,Catala,Malanje,Mucari
+comunas,Caculama,Caculama,Malanje,Mucari
+comunas,Caxinga,Caxinga,Malanje,Mucari
+comunas,Muquixe,Muquixe,Malanje,Mucari
+comunas,Kiwaba Nzoji,Kiwaba Nzoji,Malanje,Kiwaba Nzoji
+comunas,Mufuma,Mufuma,Malanje,Kiwaba Nzoji
+comunas,Quimbango,Quimbango,Malanje,Luquembo
+comunas,Capunda,Capunda,Malanje,Luquembo
+comunas,Dombo wa Zanga,Dombo wa Zanga,Malanje,Luquembo
+comunas,Luquembo,Luquembo,Malanje,Luquembo
+comunas,Cunga Palanga,Cunga Palanga,Malanje,Luquembo
+comunas,Rimba,Rimba,Malanje,Luquembo
+comunas,Lucusse,Lucusse,Moxico,Moxico
+comunas,Cachipoque,Cachipoque,Moxico,Moxico
+comunas,Luena,Luena,Moxico,Moxico
+comunas,Muangai,Muangai,Moxico,Moxico
+comunas,Cangombe,Cangombe,Moxico,Luchazes
+comunas,Cassamba,Cassamba,Moxico,Luchazes
+comunas,Tempué,Tempué,Moxico,Luchazes
+comunas,Cangamba,Cangamba,Moxico,Luchazes
+comunas,Muié,Muié,Moxico,Luchazes
+comunas,Nana Candundo,Nana Candundo,Moxico,Alto Zambeze
+comunas,Lumbala Caquengue,Lumbala Caquengue,Moxico,Alto Zambeze
+comunas,Cazombo,Cazombo,Moxico,Alto Zambeze
+comunas,Macondo,Macondo,Moxico,Alto Zambeze
+comunas,Caianda,Caianda,Moxico,Alto Zambeze
+comunas,Calunda,Calunda,Moxico,Alto Zambeze
+comunas,Lóvua,Lóvua,Moxico,Alto Zambeze
+comunas,Lutembo,Lutembo,Moxico,Bundas
+comunas,Chiume,Chiume,Moxico,Bundas
+comunas,Lumbala Nguimbo,Lumbala Nguimbo,Moxico,Bundas
+comunas,Luvuei,Luvuei,Moxico,Bundas
+comunas,Ninda,Ninda,Moxico,Bundas
+comunas,Mussuma,Mussuma,Moxico,Bundas
+comunas,Sessa,Sessa,Moxico,Bundas
+comunas,Luacano,Luacano,Moxico,Luacano
+comunas,Lago Dilolo,Lago Dilolo,Moxico,Luacano
+comunas,Cameia - S/Comuna/Distrito,Cameia - S/Comuna/Distrito,Moxico,Cameia
+comunas,Camanongue - S/Comuna/Distrito,Camanongue - S/Comuna/Distrito,Moxico,Camanongue
+comunas,Luau - S/Comuna/Distrito,Luau - S/Comuna/Distrito,Moxico,Luau
+comunas,Léua,Léua,Moxico,Léua
+comunas,Liangongo,Liangongo,Moxico,Léua
+comunas,Moçâmedes,Moçâmedes,Namibe,Moçâmedes
+comunas,Lucira,Lucira,Namibe,Moçâmedes
+comunas,Bentiaba,Bentiaba,Namibe,Moçâmedes
+comunas,Forte Santa Rita,Forte Santa Rita,Namibe,Moçâmedes
+comunas,Baía dos Tigres,Baía dos Tigres,Namibe,Tômbwa
+comunas,Iona,Iona,Namibe,Tômbwa
+comunas,Tômbwa,Tômbwa,Namibe,Tômbwa
+comunas,Bibala,Bibala,Namibe,Bibala
+comunas,Caitou,Caitou,Namibe,Bibala
+comunas,Capangombe,Capangombe,Namibe,Bibala
+comunas,Lola,Lola,Namibe,Bibala
+comunas,Virei,Virei,Namibe,Virei
+comunas,Cainde,Cainde,Namibe,Virei
+comunas,Camucuio,Camucuio,Namibe,Camucuio
+comunas,Mamué,Mamué,Namibe,Camucuio
+comunas,Chingo,Chingo,Namibe,Camucuio
+comunas,Quitexe,Quitexe,Uíge,Dange-Quitexe
+comunas,Aldeia Viçosa,Aldeia Viçosa,Uíge,Dange-Quitexe
+comunas,Cambamba,Cambamba,Uíge,Dange-Quitexe
+comunas,Vista Alegre,Vista Alegre,Uíge,Dange-Quitexe
+comunas,Bungo - S/Comuna/Distrito,Bungo - S/Comuna/Distrito,Uíge,Bungo
+comunas,Nova Ambuíla,Nova Ambuíla,Uíge,Ambuíla
+comunas,Quipedro,Quipedro,Uíge,Ambuíla
+comunas,Dimuca,Dimuca,Uíge,Negage
+comunas,Quisseque,Quisseque,Uíge,Negage
+comunas,Negage,Negage,Uíge,Negage
+comunas,Puri - S/Comuna/Distrito,Puri - S/Comuna/Distrito,Uíge,Puri
+comunas,Maquela do Zombo,Maquela do Zombo,Uíge,Maquela do Zombo
+comunas,Quibocolo,Quibocolo,Uíge,Maquela do Zombo
+comunas,Béu,Béu,Uíge,Maquela do Zombo
+comunas,Sacandica,Sacandica,Uíge,Maquela do Zombo
+comunas,Cuilo-Futa,Cuilo-Futa,Uíge,Maquela do Zombo
+comunas,Damba,Damba,Uíge,Damba
+comunas,Nsosso,Nsosso,Uíge,Damba
+comunas,Camatambo,Camatambo,Uíge,Damba
+comunas,Lêmboa,Lêmboa,Uíge,Damba
+comunas,Petecusso,Petecusso,Uíge,Damba
+comunas,Sanza Pombo,Sanza Pombo,Uíge,Pombo
+comunas,Cuilo Pombo,Cuilo Pombo,Uíge,Pombo
+comunas,Uamba,Uamba,Uíge,Pombo
+comunas,Alfândega,Alfândega,Uíge,Pombo
+comunas,Bembe,Bembe,Uíge,Bembe
+comunas,Lucunga,Lucunga,Uíge,Bembe
+comunas,Mabaia,Mabaia,Uíge,Bembe
+comunas,Macocola,Macocola,Uíge,Milunga
+comunas,Macolo,Macolo,Uíge,Milunga
+comunas,Milunga,Milunga,Uíge,Milunga
+comunas,Massau,Massau,Uíge,Milunga
+comunas,Songo,Songo,Uíge,Songo
+comunas,Quinvuenga,Quinvuenga,Uíge,Songo
+comunas,Cuango,Cuango,Uíge,Quimbele
+comunas,Icoca,Icoca,Uíge,Quimbele
+comunas,Quimbele,Quimbele,Uíge,Quimbele
+comunas,Alto Zaza,Alto Zaza,Uíge,Quimbele
+comunas,Cangola,Cangola,Uíge,Alto Cauale
+comunas,Bengo,Bengo,Uíge,Alto Cauale
+comunas,Caiongo,Caiongo,Uíge,Alto Cauale
+comunas,Uíge - S/Comuna/Distrito,Uíge - S/Comuna/Distrito,Uíge,Uíge
+comunas,Mucaba,Mucaba,Uíge,Mucaba
+comunas,Uando Mucaba,Uando Mucaba,Uíge,Mucaba
+comunas,Buenga Sul,Buenga Sul,Uíge,Buengas
+comunas,Nova Esperança,Nova Esperança,Uíge,Buengas
+comunas,Cuilo Camboso,Cuilo Camboso,Uíge,Buengas
+comunas,Soyo,Soyo,Zaire,Soyo
+comunas,Sumba,Sumba,Zaire,Soyo
+comunas,Pedra de Feitiço,Pedra de Feitiço,Zaire,Soyo
+comunas,Quêlo,Quêlo,Zaire,Soyo
+comunas,Mangue Grande,Mangue Grande,Zaire,Soyo
+comunas,Mbanza Kongo,Mbanza Kongo,Zaire,Mbanza Kongo
+comunas,Luvo,Luvo,Zaire,Mbanza Kongo
+comunas,Caluca,Caluca,Zaire,Mbanza Kongo
+comunas,Madimba,Madimba,Zaire,Mbanza Kongo
+comunas,Quiende,Quiende,Zaire,Mbanza Kongo
+comunas,Calambata,Calambata,Zaire,Mbanza Kongo
+comunas,Nzeto,Nzeto,Zaire,Nzeto
+comunas,Quindeje,Quindeje,Zaire,Nzeto
+comunas,Musserra,Musserra,Zaire,Nzeto
+comunas,Quibala Norte,Quibala Norte,Zaire,Nzeto
+comunas,Tomboco,Tomboco,Zaire,Tomboco
+comunas,Quinsimba,Quinsimba,Zaire,Tomboco
+comunas,Quinzau,Quinzau,Zaire,Tomboco
+comunas,Cuimba,Cuimba,Zaire,Cuimba
+comunas,Buela,Buela,Zaire,Cuimba
+comunas,Serra da Canda,Serra da Canda,Zaire,Cuimba
+comunas,Luvaca,Luvaca,Zaire,Cuimba
+comunas,Nóqui,Nóqui,Zaire,Nóqui
+comunas,Lufico,Lufico,Zaire,Nóqui
+comunas,Mpala,Mpala,Zaire,Nóqui

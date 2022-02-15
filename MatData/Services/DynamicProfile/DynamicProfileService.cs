@@ -1245,7 +1245,9 @@ namespace MatData.Services.DynamicProfile
                                     Data = JsonConvert.SerializeObject(Q37Mapper.Serialize(quiz.Data)),
                                     Indicator = _db.Indicators.Find(37),
                                     Province = _db.Provinces.FirstOrDefault(p => p.Name == props["q3701"]),
-                                    Municipe = _db.Municipes.FirstOrDefault(p => p.Name == props["q3702"])
+                                    Municipe = _db.Municipes.FirstOrDefault(p => p.Name == props["q3702"]),
+                                    UrbanDistrictCommune = _db.UrbanDistrictCommunes.FirstOrDefault(p => p.Name == props["q3703"]),
+                                    NeighborhoodVillage = _db.NeighborhoodVillages.FirstOrDefault(p => p.Name == props["q3704"])
                                 });
 
                                 _db.SaveChanges();
@@ -1273,7 +1275,9 @@ namespace MatData.Services.DynamicProfile
                                     Data = JsonConvert.SerializeObject(Q38Mapper.Serialize(quiz.Data)),
                                     Indicator = _db.Indicators.Find(38),
                                     Province = _db.Provinces.FirstOrDefault(p => p.Name == props["q3801"]),
-                                    Municipe = _db.Municipes.FirstOrDefault(p => p.Name == props["q3802"])
+                                    Municipe = _db.Municipes.FirstOrDefault(p => p.Name == props["q3802"]),
+                                    UrbanDistrictCommune = _db.UrbanDistrictCommunes.FirstOrDefault(p => p.Name == props["q3803"]),
+                                    NeighborhoodVillage = _db.NeighborhoodVillages.FirstOrDefault(p => p.Name == props["q3804"])
                                 });
 
                                 _db.SaveChanges();

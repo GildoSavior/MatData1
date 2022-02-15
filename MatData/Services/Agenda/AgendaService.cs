@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using MatData;
 using MatData.Data;
+using Microsoft.AspNetCore.Http;
 
 namespace Matdata.API.Services.Agenda
 {
@@ -15,7 +16,7 @@ namespace Matdata.API.Services.Agenda
             _db = db;
         }
 
-        public ServiceResponse<bool> CreateAgenda(Models.Agenda agenda)
+        public ServiceResponse<bool> CreateAgenda(Models.Agenda agenda, IFormFile file)
         {
             try
             {
