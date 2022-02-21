@@ -23,6 +23,7 @@ namespace MatData.Data
         public virtual DbSet<Agenda> Agendas { get; set; }
         public virtual DbSet<Message> Messages { get; set; }
         public virtual DbSet<Post> Posts { get; set; }
+        public virtual DbSet<Gallery> Galleries { get; set; }
 
     }
 }

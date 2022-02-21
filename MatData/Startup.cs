@@ -1,5 +1,6 @@
 using Matdata.API.Services.Agenda;
 using Matdata.API.Services.Comment;
+using Matdata.API.Services.Gallery;
 using Matdata.API.Services.Message;
 using Matdata.API.Services.Posts;
 using MatData.Data;
@@ -99,6 +100,7 @@ namespace MatData
             services.AddTransient<IAgendaService, AgendaService>();
             services.AddTransient<ICommentService, CommentService>();
             services.AddTransient<IPostService, PostService>();
+            services.AddTransient<IGalleryService, GalleryService>();
 
         }
 
