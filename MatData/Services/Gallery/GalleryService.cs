@@ -1,9 +1,12 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
+using System.Threading.Tasks;
 using Matdata.API.Models;
 using MatData;
 using MatData.Data;
+using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
 
 namespace Matdata.API.Services.Gallery
@@ -12,16 +15,36 @@ namespace Matdata.API.Services.Gallery
     {
         private readonly AppDbContext _db;
 
-        public GalleryService(AppDbContext db)
+        public static IWebHostEnvironment _environment;
+        public GalleryService(AppDbContext db, IWebHostEnvironment environment)
         {
             _db = db;
-        }
+            _environment = environment;
+    }
 
-        public ServiceResponse<bool> CreateGallery(Models.Gallery gallery, IFormFile file)
+        public async Task<ServiceResponse<bool>> CreateGallery(Models.Gallery gallery, IFormFile file)
         {
-
-            try
+        
+        try
             {
+                var repositoryPath = Path.Combine(_environment.WebRootPath, "Repository");
+                if (!Directory.Exists(repositoryPath))
+                {
+                    Directory.CreateDirectory(repositoryPath);
+                }
+
+                var destinationPath = Path.Combine(repositoryPath, "Images");
+
+                if (!Directory.Exists(destinationPath))
+                {
+                    Directory.CreateDirectory(destinationPath);
+                }
+                var fileName = Path.Combine(destinationPath, file.FileName);
+                using (var filestream = File.Create(fileName))
+                {
+                    await file.CopyToAsync(filestream);
+                    filestream.Flush();
+                }
                 _db.Galleries.Add(gallery);
                 _db.SaveChanges();
 

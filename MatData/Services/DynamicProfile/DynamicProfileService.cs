@@ -60,7 +60,7 @@ namespace MatData.Services.DynamicProfile
                         Directory.CreateDirectory(repositoryPath);
                     }
 
-                    var destinationPath = Path.Combine(repositoryPath);
+                    var destinationPath = Path.Combine(repositoryPath, "Images");
 
                     if (!Directory.Exists(destinationPath))
                     {

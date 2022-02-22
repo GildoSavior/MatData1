@@ -1,4 +1,5 @@
 ﻿using System.Collections.Generic;
+using System.Threading.Tasks;
 using MatData;
 using Microsoft.AspNetCore.Http;
 
@@ -9,7 +10,7 @@ namespace Matdata.API.Services.Gallery
 		List<Models.Gallery>GetGallery();
 		Models.Gallery GetGalleryById(int id);
 		ServiceResponse<bool> DeleteGallery(int id);
-		ServiceResponse<bool> CreateGallery(Models.Gallery gallery, IFormFile file);
+		Task<ServiceResponse<bool>> CreateGallery(Models.Gallery gallery, IFormFile file);
 	}
 }
 
