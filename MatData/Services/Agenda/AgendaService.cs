@@ -1,8 +1,11 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
+using System.Threading.Tasks;
 using MatData;
 using MatData.Data;
+using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
 
 namespace Matdata.API.Services.Agenda
@@ -10,16 +13,36 @@ namespace Matdata.API.Services.Agenda
     public class AgendaService : IAgendaService
     {
         private readonly AppDbContext _db;
+        public static IWebHostEnvironment _environment;
 
-        public AgendaService(AppDbContext db)
+        public AgendaService(AppDbContext db, IWebHostEnvironment environment)
         {
             _db = db;
+            _environment = environment;
         }
 
-        public ServiceResponse<bool> CreateAgenda(Models.Agenda agenda, IFormFile file)
+        public async Task<ServiceResponse<bool>> CreateAgenda(Models.Agenda agenda, IFormFile file)
         {
             try
             {
+                var repositoryPath = Path.Combine(_environment.WebRootPath, "Repository");
+                if (!Directory.Exists(repositoryPath))
+                {
+                    Directory.CreateDirectory(repositoryPath);
+                }
+
+                var destinationPath = Path.Combine(repositoryPath, "Images");
+
+                if (!Directory.Exists(destinationPath))
+                {
+                    Directory.CreateDirectory(destinationPath);
+                }
+                var fileName = Path.Combine(destinationPath, file.FileName);
+                using (var filestream = File.Create(fileName))
+                {
+                    await file.CopyToAsync(filestream);
+                    filestream.Flush();
+                }
                 _db.Agendas.Add(agenda);
                 _db.SaveChanges();
 

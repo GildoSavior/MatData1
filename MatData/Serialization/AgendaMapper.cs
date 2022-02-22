@@ -4,14 +4,17 @@ using Matdata.API.ViewModels;
 
 namespace Matdata.API.Serialization
 {
-	public class GalleryMapper
+	public class AgendaMapper
 	{
-		public static Gallery Serialize(GalleryVM galleryVM, string fileName)
+		public static Agenda Serialize(AgendaVM agendaVM, string fileName)
 		{
-			return new Gallery
+			return new Agenda
 			{
-				Image = fileName,
-				Description = galleryVM.Description
+				Title = agendaVM.Title,
+				Cover = fileName,
+				Status = agendaVM.Status,
+				DateAgenda = DateTime.Now,
+				Description = agendaVM.Description
 			};
 		}
 	}
